@@ -12,7 +12,17 @@ A responsive Next.js frontend for a real-estate discovery and broker workflow co
 6. Open the local URL printed in the terminal, usually `http://localhost:3000`.
 7. Stop the server with **Ctrl+C** in that terminal.
 
-Edit files in `app/` and styles in `app/globals.css`. Development mode reloads saved changes.
+Edit route pages in `app/`, shared interface components in `components/`, and styles in `app/globals.css`. Development mode reloads saved changes.
+
+
+## Code organization
+
+- `app/` contains the Next.js routes and the global stylesheet.
+- `components/layout/` contains the shared site header, footer, and information-page frame.
+- `components/search/` contains the home search and the shared property search experience.
+- `components/property/` contains listing cards and saved-property controls.
+- `components/discovery/` contains the featured discovery section.
+- `lib/demo-data.ts` contains the local property and project data used by the frontend.
 
 ## Google Places setup (optional)
 

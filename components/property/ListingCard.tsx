@@ -1,12 +1,12 @@
 import Link from "next/link";
 import type { DemoListing } from "@/lib/demo-data";
-import { SaveButton } from "./SaveButton";
+import { SaveButton } from "@/components/property/SaveButton";
 
 export function ListingCard({ item }: { item: DemoListing }) {
   return (
     <article className="listing-card">
       <Link className="listing-image" href={`/property/${item.id}`} aria-label={`View ${item.title}`}>
-        <img src={item.image} alt={item.title} loading="lazy" />
+        <img src={item.image} alt={`${item.kind} in ${item.locality}, ${item.city}`} loading="lazy" decoding="async" />
       </Link>
       <SaveButton id={item.id} />
       <div className="listing-info">

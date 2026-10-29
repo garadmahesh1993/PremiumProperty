@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { BrandMark } from "@/components/brand/BrandMark";
 import Link from "next/link";
 
 type FooterTab = "buyers" | "tenants" | "projects" | "cities" | "searches";
@@ -52,7 +53,7 @@ export function SiteFooter() {
 
     <div className="footer-main">
       <div className="footer-brand-panel">
-        <Link className="brand footer-brand" href="/"><span className="brand-mark">P<span>.</span></span><span className="brand-name">Premium<span>Property</span></span></Link>
+        <Link className="brand footer-brand" href="/"><BrandMark/><span className="brand-name">Premium<span>Property</span></span></Link>
         <p>Find a place that feels like yours.</p>
         <div className="footer-brand-art" aria-label="A clearer way to find your next place">
           <span>Find your<br/>next place.</span><i aria-hidden="true">⌂</i><small>DISCOVER · COMPARE · MOVE</small>
@@ -69,7 +70,7 @@ export function SiteFooter() {
       </div>
     </div>
 
-    <div className="footer-legal"><Link className="brand footer-brand-small" href="/"><span className="brand-mark">P<span>.</span></span><span className="brand-name">Premium<span>Property</span></span></Link><span>© 2026 PremiumProperty · Property discovery</span><div className="footer-legal-links"><Link href="/contact">Contact</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div><span>Property information is illustrative.</span></div>
+    <div className="footer-legal"><Link className="brand footer-brand-small" href="/"><BrandMark/><span className="brand-name">Premium<span>Property</span></span></Link><span>© 2026 PremiumProperty · Property discovery</span><div className="footer-legal-links"><Link href="/contact">Contact</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div><span>Property information is illustrative.</span></div>
   </footer>;
 }
 

@@ -33,3 +33,15 @@ export const SAVED_SEARCHES_KEY = "premiumproperty-saved-searches";
 export function readStoredIds(key: string): string[] { if (typeof window === "undefined") return []; try { const value = JSON.parse(window.localStorage.getItem(key) || "[]"); return Array.isArray(value) ? value.map(String) : []; } catch { return []; } }
 export function writeStoredIds(key: string, ids: string[]) { if (typeof window !== "undefined") window.localStorage.setItem(key, JSON.stringify(ids)); }
 
+
+const galleryPhotos: Record<DemoListing["category"], string[]> = {
+  residential: [photo("photo-1600210492486-724fe5c67fb0"), photo("photo-1600566753086-00f18fb6b3ea"), photo("photo-1600607687920-4e2a09cf159d")],
+  commercial: [photo("photo-1497366811353-6870744d04b2"), photo("photo-1497366754035-f200968a6e72"), photo("photo-1497366216548-37526070297c")],
+  pg: [photo("photo-1522708323590-d24dbb6b0267"), photo("photo-1600607687644-c7171b42498f"), photo("photo-1600607687939-ce8a6c25118c")],
+  plot: [photo("photo-1500382017468-9049fed747ef"), photo("photo-1500382017468-9049fed747ef"), photo("photo-1441974231531-c6227db76b6e")],
+};
+
+/** Illustrative gallery images for the fictional sample listings. */
+export function getListingGallery(listing: DemoListing): string[] {
+  return Array.from(new Set([listing.image, ...galleryPhotos[listing.category]])).slice(0, 4);
+}

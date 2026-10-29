@@ -1,3 +1,28 @@
-"use client";import {useParams} from "next/navigation";import {useState} from "react";import Link from "next/link";import {getListing,demoListings} from "@/lib/demo-data";import {SiteHeader} from "../../components/SiteHeader";import {SiteFooter} from "../../components/SiteFooter";import {SaveButton} from "../../components/SaveButton";import {ListingCard} from "../../components/ListingCard";
-export default function PropertyPage(){const {id}=useParams<{id:string}>();const item=getListing(id);const [sent,setSent]=useState(false);if(!item)return <><SiteHeader/><main className="route-page empty-state"><h1>Listing not found</h1><p>This property may no longer be available.</p><Link className="button button-teal" href="/explore">Browse homes</Link></main><SiteFooter/></>;return <><SiteHeader/><main className="route-page"><Link className="back-link" href="/explore">← Back to homes</Link><div className="property-hero"><img src={item.image} alt={item.title}/><span className="demo-tag">PROPERTY DETAILS</span></div><div className="property-layout"><article className="property-content"><span className="eyebrow">{item.kind} · {item.locality}, {item.city}</span><h1>{item.title}</h1><p className="property-description">{item.description}</p><div className="property-facts"><span><b>{item.bedrooms||"—"}</b> Bedrooms</span><span><b>{item.bathrooms||"—"}</b> Bathrooms</span><span><b>{item.area.toLocaleString("en-IN")}</b> sq.ft.</span><span><b>{item.furnishing}</b> Furnishing</span></div><h2>About this home</h2><p>{item.description} All listing information on this site is fictional sample content, included to demonstrate the frontend. Verify property details independently before making decisions.</p><h2>Location</h2><div className="location-placeholder"><span>⌖</span><div><strong>{item.locality}, {item.city}</strong><p>Map preview is illustrative and does not show a precise address.</p></div></div><h2>Similar homes</h2><div className="listing-grid">{demoListings.filter(x=>x.id!==item.id&&x.category===item.category).slice(0,2).map(x=><ListingCard item={x} key={x.id}/>)}</div></article><aside className="contact-card"><span>ASKING PRICE</span><strong>{item.priceLabel}</strong><p>Contact the listing owner</p><SaveButton id={item.id}/><button className="button button-orange" onClick={()=>setSent(true)}>Request a site visit</button><button className="button button-outline" onClick={()=>setSent(true)}>Send an enquiry</button>{sent&&<p className="success-note">Request noted. No message was sent.</p>}<small>This website is not connected to agents or appointments. Contact details and appointments are not connected to a real agent.</small></aside></div></main><SiteFooter/></>}
+import type { Metadata } from "next";
+import { demoListings, getListing } from "@/lib/demo-data";
+import { PropertyDetailExperience } from "./PropertyDetailExperience";
 
+type PropertyPageProps = { params: Promise<{ id: string }> };
+
+export function generateStaticParams() {
+  return demoListings.map((listing) => ({ id: listing.id }));
+}
+
+export async function generateMetadata({ params }: PropertyPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const listing = getListing(id);
+  if (!listing) return { title: "Property not found" };
+  const title = `${listing.title} in ${listing.locality}, ${listing.city}`;
+  const description = `${listing.kind} in ${listing.locality}, ${listing.city}. ${listing.priceLabel}. View property facts and illustrative photos.`;
+  return {
+    title,
+    description,
+    openGraph: { title, description, type: "article", images: [{ url: listing.image, alt: `${listing.kind} in ${listing.locality}, ${listing.city}` }] },
+    twitter: { card: "summary_large_image", title, description, images: [listing.image] },
+  };
+}
+
+export default async function PropertyPage({ params }: PropertyPageProps) {
+  const { id } = await params;
+  return <PropertyDetailExperience id={id}/>;
+}

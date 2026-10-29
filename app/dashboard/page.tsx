@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { BrandMark } from "@/components/brand/BrandMark";
 
 const listings = [
   { title: "3 BHK apartment · Baner", state: "Published", tone: "published", views: "248", leads: "12", date: "Updated 18 Oct" },
@@ -17,8 +18,8 @@ export default function DashboardPage() {
   const [tab, setTab] = useState("Overview");
   const [message, setMessage] = useState("");
   const show = (text: string) => { setMessage(text); window.setTimeout(() => setMessage(""), 2800); };
-  return <main className="dashboard-page">
-    <header className="site-header"><a className="brand" href="/" aria-label="PremiumProperty home"><span className="brand-mark">P<span>.</span></span><span className="brand-name">Premium<span>Property</span></span></a><nav className="desktop-nav"><a className="nav-link" href="/">Explore homes</a><span className="nav-link active">My workspace</span></nav><div className="header-actions"><a className="text-button dashboard-back" href="/">Back to homes</a><span className="avatar-small">AJ</span></div></header>
+  return <main id="main-content" className="dashboard-page">
+    <header className="site-header"><a className="brand" href="/" aria-label="PremiumProperty home"><BrandMark/><span className="brand-name">Premium<span>Property</span></span></a><nav className="desktop-nav"><a className="nav-link" href="/">Explore homes</a><span className="nav-link active">My workspace</span></nav><div className="header-actions"><a className="text-button dashboard-back" href="/">Back to homes</a><span className="avatar-small">AJ</span></div></header>
     <div className="dashboard-wrap"><aside className="dash-sidebar"><div className="dash-user"><div className="avatar-large">AJ</div><div><strong>Arjun Joshi</strong><span>Property owner</span></div></div><div className="dash-sidebar-label">WORKSPACE</div>{["Overview", "My listings", "Enquiries", "Site visits", "Profile"].map((x) => <button key={x} className={`dash-nav ${tab === x ? "dash-nav-active" : ""}`} onClick={() => setTab(x)}>{x === "Overview" ? "◫" : x === "My listings" ? "⌂" : x === "Enquiries" ? "✉" : x === "Site visits" ? "▦" : "○"}<span>{x}</span>{x === "Enquiries" && <i>3</i>}</button>)}<div className="dash-sidebar-bottom"><span>Need a hand?</span><button onClick={() => show("Our team will be available once support is connected.")}>Contact support <span>→</span></button></div></aside>
       <section className="dash-main"><div className="dash-welcome"><div><span className="eyebrow">YOUR PROPERTY WORKSPACE</span><h1>{tab === "Overview" ? "Good morning, Arjun." : tab}</h1><p>Keep your listings moving and every conversation in view.</p></div><a className="button button-teal" href="/#top">＋ List a property</a></div><div className="dash-demo-banner"><span className="dash-demo-dot"/><span><strong>Property workspace</strong> · All listings, leads and activity below are example activity.</span></div>
         <div className="dash-stats"><article><span>ACTIVE LISTINGS</span><strong>1</strong><small>1 more in progress</small></article><article><span>PROPERTY VIEWS</span><strong>248</strong><small>Across your published listing</small></article><article><span>NEW ENQUIRIES</span><strong>3</strong><small>1 waiting for your reply</small></article><article><span>SITE VISITS</span><strong>1</strong><small>Next request: 26 Oct</small></article></div>

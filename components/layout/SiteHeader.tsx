@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { BrandMark } from "@/components/brand/BrandMark";
 
 const cities = [
   { name: "Pune", icon: "🏙️" },
@@ -116,8 +117,9 @@ export function SiteHeader({ selectedLocation = "" }: { selectedLocation?: strin
 
   return (
     <header className="site-header">
+      <a className="skip-link" href="#main-content">Skip to main content</a>
       <Link className="brand" href="/" aria-label="PremiumProperty home">
-        <span className="brand-mark">P<span>.</span></span>
+        <BrandMark/>
         <span className="brand-name">Premium<span>Property</span></span>
       </Link>
 

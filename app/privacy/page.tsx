@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { InfoPageFrame } from "../components/InfoPageFrame";
+import { InfoPageFrame } from "@/components/layout/InfoPageFrame";
 
 export default function PrivacyPage() {
   const supportEmail = process.env.NEXT_PUBLIC_SUPPORT_EMAIL?.trim() || "";

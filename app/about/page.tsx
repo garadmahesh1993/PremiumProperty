@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { InfoPageFrame } from "../components/InfoPageFrame";
+import { InfoPageFrame } from "@/components/layout/InfoPageFrame";
 
 export const metadata: Metadata = {
   title: "About PremiumProperty",
