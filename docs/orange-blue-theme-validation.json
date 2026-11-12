@@ -1,0 +1,582 @@
+{
+  "date": "2026-11-12T16:11:01.469Z",
+  "base": "http://127.0.0.1:3000",
+  "accessibility": [
+    {
+      "name": "/ 390",
+      "violations": []
+    },
+    {
+      "name": "/explore 390",
+      "violations": []
+    },
+    {
+      "name": "/saved 390",
+      "violations": []
+    },
+    {
+      "name": "/profiles/aj-nova-reality 390",
+      "violations": []
+    },
+    {
+      "name": "/property/pp-101 390",
+      "violations": []
+    },
+    {
+      "name": "/post-property 390",
+      "violations": []
+    },
+    {
+      "name": "/account 390",
+      "violations": []
+    },
+    {
+      "name": "/reels 390",
+      "violations": []
+    },
+    {
+      "name": "/messages 390",
+      "violations": []
+    },
+    {
+      "name": "/login 390",
+      "violations": []
+    },
+    {
+      "name": "/projects 390",
+      "violations": []
+    },
+    {
+      "name": "/services 390",
+      "violations": []
+    },
+    {
+      "name": "/ 1440",
+      "violations": []
+    },
+    {
+      "name": "/explore 1440",
+      "violations": []
+    },
+    {
+      "name": "/saved 1440",
+      "violations": []
+    },
+    {
+      "name": "/profiles/aj-nova-reality 1440",
+      "violations": []
+    },
+    {
+      "name": "/property/pp-101 1440",
+      "violations": []
+    },
+    {
+      "name": "/post-property 1440",
+      "violations": []
+    },
+    {
+      "name": "/account 1440",
+      "violations": []
+    },
+    {
+      "name": "/reels 1440",
+      "violations": []
+    },
+    {
+      "name": "/messages 1440",
+      "violations": []
+    },
+    {
+      "name": "/login 1440",
+      "violations": []
+    },
+    {
+      "name": "/projects 1440",
+      "violations": []
+    },
+    {
+      "name": "/services 1440",
+      "violations": []
+    },
+    {
+      "name": "filter dialog",
+      "violations": []
+    },
+    {
+      "name": "gallery dialog",
+      "violations": []
+    },
+    {
+      "name": "collection dialog",
+      "violations": []
+    },
+    {
+      "name": "saved state and feedback",
+      "violations": []
+    }
+  ],
+  "responsive": [
+    {
+      "width": 320,
+      "route": "/",
+      "scrollWidth": 320
+    },
+    {
+      "width": 320,
+      "route": "/explore",
+      "scrollWidth": 320
+    },
+    {
+      "width": 320,
+      "route": "/saved",
+      "scrollWidth": 320
+    },
+    {
+      "width": 320,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 320
+    },
+    {
+      "width": 320,
+      "route": "/property/pp-101",
+      "scrollWidth": 320
+    },
+    {
+      "width": 320,
+      "route": "/post-property",
+      "scrollWidth": 320
+    },
+    {
+      "width": 320,
+      "route": "/account",
+      "scrollWidth": 320
+    },
+    {
+      "width": 360,
+      "route": "/",
+      "scrollWidth": 360
+    },
+    {
+      "width": 360,
+      "route": "/explore",
+      "scrollWidth": 360
+    },
+    {
+      "width": 360,
+      "route": "/saved",
+      "scrollWidth": 360
+    },
+    {
+      "width": 360,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 360
+    },
+    {
+      "width": 360,
+      "route": "/property/pp-101",
+      "scrollWidth": 360
+    },
+    {
+      "width": 360,
+      "route": "/post-property",
+      "scrollWidth": 360
+    },
+    {
+      "width": 360,
+      "route": "/account",
+      "scrollWidth": 360
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "scrollWidth": 375
+    },
+    {
+      "width": 375,
+      "route": "/explore",
+      "scrollWidth": 375
+    },
+    {
+      "width": 375,
+      "route": "/saved",
+      "scrollWidth": 375
+    },
+    {
+      "width": 375,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 375
+    },
+    {
+      "width": 375,
+      "route": "/property/pp-101",
+      "scrollWidth": 375
+    },
+    {
+      "width": 375,
+      "route": "/post-property",
+      "scrollWidth": 375
+    },
+    {
+      "width": 375,
+      "route": "/account",
+      "scrollWidth": 375
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "scrollWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/explore",
+      "scrollWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/saved",
+      "scrollWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/property/pp-101",
+      "scrollWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/post-property",
+      "scrollWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/account",
+      "scrollWidth": 390
+    },
+    {
+      "width": 430,
+      "route": "/",
+      "scrollWidth": 430
+    },
+    {
+      "width": 430,
+      "route": "/explore",
+      "scrollWidth": 430
+    },
+    {
+      "width": 430,
+      "route": "/saved",
+      "scrollWidth": 430
+    },
+    {
+      "width": 430,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 430
+    },
+    {
+      "width": 430,
+      "route": "/property/pp-101",
+      "scrollWidth": 430
+    },
+    {
+      "width": 430,
+      "route": "/post-property",
+      "scrollWidth": 430
+    },
+    {
+      "width": 430,
+      "route": "/account",
+      "scrollWidth": 430
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "/explore",
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "/saved",
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "/property/pp-101",
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "/post-property",
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "/account",
+      "scrollWidth": 768
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/explore",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/saved",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/property/pp-101",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/post-property",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/account",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/explore",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/saved",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/property/pp-101",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/post-property",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/account",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/explore",
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/saved",
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/property/pp-101",
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/post-property",
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/account",
+      "scrollWidth": 1440
+    }
+  ],
+  "errors": [],
+  "resolvedFindings": [
+    {
+      "name": "/projects 390",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a[href$=\"the-canopy\"] > .project-info > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #878b91, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[href$=\"aurum-gardens\"] > .project-info > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #878b91, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[href$=\"riverside-house\"] > .project-info > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #878b91, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/services 390",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#emi > .emi-result > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #687280, background color: #edf1f6, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#emi > .emi-result > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #687280, background color: #edf1f6, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".tool-callout > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #73787e, background color: #f7f4ec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#value-estimator > .emi-result > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #687280, background color: #edf1f6, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#value-estimator > .emi-result > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #687280, background color: #edf1f6, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/projects 1440",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a[href$=\"the-canopy\"] > .project-info > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #878b91, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[href$=\"aurum-gardens\"] > .project-info > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #878b91, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[href$=\"riverside-house\"] > .project-info > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #878b91, background color: #ffffff, font size: 6.8pt (9px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/services 1440",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#emi > .emi-result > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #687280, background color: #edf1f6, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#emi > .emi-result > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #687280, background color: #edf1f6, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".tool-callout > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #73787e, background color: #f7f4ec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#value-estimator > .emi-result > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #687280, background color: #edf1f6, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#value-estimator > .emi-result > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #687280, background color: #edf1f6, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "completed": "2026-11-12T16:13:27.381Z",
+  "build": "passed",
+  "summary": {
+    "accessibilityScans": 28,
+    "violations": 0,
+    "responsiveChecks": 63,
+    "pageErrors": 0
+  }
+}

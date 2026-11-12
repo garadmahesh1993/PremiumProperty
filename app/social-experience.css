@@ -21,26 +21,26 @@
   }
 }
 .sp-main .sp-post-price > span {
-  color: #50655a;
+  color: #505965;
 }
 .sp-main .sp-team-card p {
-  color: #51645b;
+  color: #515964;
 }
 .account-page .account-contact-lines > span,
 .account-page .account-local-note,
 .account-page .activity-tabs b {
-  color: #50625a;
+  color: #505862;
 }
 .account-page .account-upgrade-link,
 .account-page .account-owner-copy > small {
-  color: #075f55;
+  color: #122e54;
 }
 :root {
   --sp-bg: #f7f7f3;
   --canvas: #f7f7f3;
-  --teal: #087769;
-  --teal-dark: #075f55;
-  --orange: #087769;
+  --teal: #173968;
+  --teal-dark: #122e54;
+  --orange: #173968;
   --muted: #596b71;
   --sp-muted: #596b71;
   --sp-ink: #142b35;
@@ -62,7 +62,7 @@ textarea {
   max-width: 100%;
 }
 :focus-visible {
-  outline: 3px solid #087769;
+  outline: 3px solid #173968;
   outline-offset: 3px;
 }
 html {
@@ -100,7 +100,7 @@ html {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.6px;
-  color: #536a63;
+  color: #535d6a;
 }
 .sp-heading-action {
   display: flex;
@@ -137,7 +137,7 @@ html {
   display: flex;
   align-items: center;
   gap: 15px;
-  border: 1px solid #cdd9d4;
+  border: 1px solid #cdd2d9;
   border-radius: 12px;
   background: #fff;
   padding: 9px 10px 9px 18px;
@@ -170,7 +170,7 @@ html {
   padding: 9px 16px;
   min-height: 44px;
   border-radius: 24px;
-  color: #4c635c;
+  color: #4c5663;
   font-size: 12px;
   white-space: nowrap;
 }
@@ -257,7 +257,7 @@ html {
   gap: 8px;
   font-size: 12px;
   font-weight: 600;
-  color: #496058;
+  color: #495360;
 }
 .sp-filter-fields input:not([type="checkbox"]),
 .sp-filter-fields select,
@@ -267,7 +267,7 @@ html {
   min-height: 44px;
   width: 100%;
   min-width: 0;
-  border: 1px solid #bfcdc6;
+  border: 1px solid #bfc5cd;
   border-radius: 7px;
   padding: 10px;
   background: white;
@@ -316,9 +316,9 @@ html {
   align-items: center;
   gap: 8px;
   min-height: 36px;
-  border: 1px solid #d3dfd7;
-  background: #eaf1eb;
-  color: #315e48;
+  border: 1px solid #d3d8df;
+  background: #eaedf1;
+  color: #31445e;
   font-size: 11px;
   border-radius: 20px;
   padding: 7px 12px;
@@ -346,9 +346,9 @@ html {
   gap: 18px;
   background: repeating-linear-gradient(
     40deg,
-    #eaf0e7 0 55px,
-    #dce7d6 56px 59px,
-    #edf2e9 60px 95px
+    #e7ebf0 0 55px,
+    #d6dde7 56px 59px,
+    #e9edf2 60px 95px
   );
   padding: 25px;
   border-radius: 12px;
@@ -444,18 +444,18 @@ html {
   flex-direction: column;
   text-align: left;
   gap: 12px;
-  border: 1px solid #d4ddd4;
+  border: 1px solid #d4d8dd;
   border-radius: 12px;
-  background: linear-gradient(120deg, #e9eee4, #f3f4ed);
+  background: linear-gradient(120deg, #e4e8ee, #edf0f4);
   padding: 22px;
-  color: #435f50;
+  color: #434f5f;
   overflow-wrap: anywhere;
   min-width: 0;
 }
 .sp-collection-grid > button.active {
   outline: 2px solid var(--sp-teal);
   outline-offset: 2px;
-  background: #e3eee6;
+  background: #e3e8ee;
 }
 .sp-collection-grid strong {
   font-size: 14px;
@@ -470,7 +470,7 @@ html {
   max-height: 300px;
   border-radius: 14px 14px 0 0;
   overflow: hidden;
-  background: #e3e8df;
+  background: #dfe3e8;
 }
 .sp-profile-cover:after {
   content: "";
@@ -509,9 +509,9 @@ html {
   width: 85px;
   height: 85px;
   border: 4px solid white;
-  box-shadow: 0 0 0 1px #d9e4d5;
-  background: #e9f0e3;
-  color: #315c45;
+  box-shadow: 0 0 0 1px #d5dbe4;
+  background: #e3e8f0;
+  color: #31435c;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -567,7 +567,7 @@ html {
   width: 85px;
   height: 85px;
   border-radius: 22px;
-  background: #eaf1e8;
+  background: #e8ecf1;
   color: var(--sp-teal);
   margin-bottom: 32px;
 }
@@ -619,8 +619,8 @@ html {
   top: 95px;
 }
 .sp-account-intro {
-  background: linear-gradient(110deg, #e7eee4, #f5f4ea);
-  border: 1px solid #dce4d6;
+  background: linear-gradient(110deg, #e4e8ee, #f5f4ea);
+  border: 1px solid #d6dce4;
   border-radius: 14px;
   padding: 30px;
   margin-bottom: 25px;
@@ -654,7 +654,7 @@ html {
   min-height: 52px;
 }
 .account-page .account-owner-banner {
-  background: #eaf1e7;
+  background: #e7ebf1;
   border-radius: 14px;
 }
 .account-page .account-owner-copy b {
@@ -673,7 +673,7 @@ html {
   align-items: center;
   gap: 9px;
   font-size: 11px;
-  color: #64736a;
+  color: #646a73;
   min-width: 0;
 }
 .sp-composer-steps > li > span {
@@ -682,12 +682,12 @@ html {
   width: 30px;
   height: 30px;
   flex-shrink: 0;
-  background: #e5e9e1;
+  background: #e1e4e9;
   border-radius: 50%;
 }
 .sp-composer-steps > li.active > span {
-  background: #e2eee5;
-  color: #076958;
+  background: #e2e7ee;
+  color: #14325c;
 }
 .sp-composer-steps > li[aria-current="step"] > span {
   color: white;
@@ -773,8 +773,8 @@ html {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background: linear-gradient(135deg, #e5ebdf, #eff1e7);
-  color: #5c735e;
+  background: linear-gradient(135deg, #dfe4eb, #e7ebf1);
+  color: #5c6673;
 }
 .sp-composer-preview-photo > img {
   width: 100%;
@@ -811,8 +811,8 @@ html {
   color: var(--sp-muted);
 }
 .sp-uploader {
-  border: 1px dashed #93b4a1;
-  background: #f6f8f3;
+  border: 1px dashed #93a1b4;
+  background: #f3f5f8;
   border-radius: 10px;
   display: flex;
   flex-direction: column;

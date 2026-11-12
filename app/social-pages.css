@@ -70,7 +70,7 @@
   flex-direction: column;
   gap: 9px;
   font-size: 14px;
-  color: #50665b;
+  color: #505966;
   margin-bottom: 22px;
 }
 .sp-form-label input,
@@ -80,7 +80,7 @@
   min-width: 0;
   min-height: 47px;
   padding: 11px 12px;
-  border: 1px solid #9bb0a2;
+  border: 1px solid #9ba4b0;
   border-radius: 7px;
   background: white;
   color: var(--sp-ink);
@@ -111,7 +111,7 @@
   gap: 9px;
   flex: 1;
   min-width: 0;
-  color: #557360;
+  color: #556273;
 }
 .sp-explore-search > label + label {
   border-left: 1px solid var(--sp-line);
@@ -154,16 +154,16 @@
   height: 46px;
   border-radius: 5px;
   overflow: hidden;
-  background: #e6eee0;
+  background: #e0e6ee;
 }
 .sp-category-strip strong {
   font-size: 12px;
   font-weight: 600;
 }
 .sp-category-strip > button[aria-pressed="true"] {
-  background: #eef5ee;
-  border-color: #8aaf96;
-  color: #236646;
+  background: #eef1f5;
+  border-color: #8a99af;
+  color: #233f66;
 }
 .sp-explore-layout {
   display: grid;
@@ -209,7 +209,7 @@
   width: 100%;
   font-size: 13px;
   font-weight: 600;
-  color: #2d4d3c;
+  color: #2d3a4d;
   padding: 0;
   margin-bottom: 15px;
 }
@@ -220,7 +220,7 @@
   display: block;
   font-size: 10px;
   font-weight: 400;
-  color: #59725e;
+  color: #596372;
   margin-top: 4px;
 }
 .sp-filter-fields label {
@@ -229,14 +229,14 @@
   gap: 8px;
   font-size: 12px;
   margin: 16px 0 0;
-  color: #4d6857;
+  color: #4d5868;
 }
 .sp-filter-fields label input:not([type="checkbox"]),
 .sp-filter-fields label select {
   width: 100%;
   min-width: 0;
   height: 43px;
-  border: 1px solid #96ad9b;
+  border: 1px solid #96a0ad;
   border-radius: 5px;
   padding: 9px;
   background: white;
@@ -267,7 +267,7 @@
   display: flex;
   border-radius: 5px;
   padding: 4px;
-  background: #f0f4ed;
+  background: #edf0f4;
   gap: 3px;
 }
 .sp-segmented button {
@@ -282,7 +282,7 @@
 .sp-segmented button[aria-pressed="true"] {
   background: white;
   color: var(--sp-teal);
-  box-shadow: 0 2px 7px #143a2310;
+  box-shadow: 0 2px 7px #14243a10;
   font-weight: 650;
 }
 .sp-bhk {
@@ -291,7 +291,7 @@
   flex-wrap: wrap;
 }
 .sp-bhk button {
-  border: 1px solid #abc0af;
+  border: 1px solid #abb4c0;
   background: white;
   border-radius: 5px;
   padding: 8px;
@@ -300,13 +300,13 @@
 }
 .sp-bhk button[aria-pressed="true"] {
   border-color: var(--sp-teal);
-  background: #ebf5eb;
-  color: #16613e;
+  background: #ebeff5;
+  color: #163561;
 }
 .sp-filter-note {
   font-size: 11px;
   line-height: 1.8;
-  color: #5e715f;
+  color: #5e6671;
   margin: 17px 0;
 }
 .sp-apply-desktop {
@@ -338,13 +338,13 @@
   gap: 8px;
 }
 .sp-sort select {
-  border: 1px solid #bbccbf;
+  border: 1px solid #bbc2cc;
   border-radius: 6px;
   background: white;
   padding: 9px;
   min-height: 40px;
   font-size: 12px;
-  color: #3b5b48;
+  color: #3b485b;
   max-width: 170px;
 }
 .sp-filter-open {
@@ -361,9 +361,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid #ccdbcc;
-  background: #edf5ec;
-  color: #346345;
+  border: 1px solid #ccd2db;
+  background: #ecf0f5;
+  color: #344863;
   border-radius: 5px;
   padding: 7px 10px;
   min-height: 33px;
@@ -438,12 +438,12 @@
 .sp-collection-cover {
   position: relative;
   height: 105px;
-  background: #e4ede0;
+  background: #e0e5ed;
   border-radius: 9px;
   overflow: hidden;
   display: grid;
   place-items: center;
-  color: #497b56;
+  color: #495e7b;
 }
 .sp-collections-strip strong {
   display: block;
@@ -453,7 +453,7 @@
 }
 .sp-collections-strip > button > span {
   font-size: 11px;
-  color: #5e7764;
+  color: #5e6877;
 }
 .sp-collections-strip > button.active {
   border-bottom-color: var(--sp-teal);
@@ -465,9 +465,9 @@
   margin-bottom: 20px;
 }
 .sp-name-suggestions button {
-  border: 1px solid #c6d7c7;
-  background: #eff5eb;
-  color: #3c6144;
+  border: 1px solid #c6cdd7;
+  background: #ebeff5;
+  color: #3c4b61;
   padding: 8px 10px;
   min-height: 36px;
   border-radius: 20px;
@@ -492,13 +492,13 @@
   height: 240px;
   border-radius: 14px;
   overflow: hidden;
-  background: #dfe9df;
+  background: #dfe3e9;
 }
 .sp-profile-cover::after {
   content: "";
   position: absolute;
   inset: 40% 0 0;
-  background: linear-gradient(transparent, #16372b70);
+  background: linear-gradient(transparent, #16243770);
 }
 .sp-profile-cover > span {
   position: absolute;
@@ -525,8 +525,8 @@
   place-items: center;
   border: 5px solid var(--sp-bg);
   border-radius: 50%;
-  background: #e5eddd;
-  color: #486b3c;
+  background: #dde4ed;
+  color: #3c506b;
   font-size: 28px;
   font-weight: 650;
   flex-shrink: 0;
@@ -542,7 +542,7 @@
 }
 .sp-profile-type {
   font-size: 12px;
-  color: #536f5c;
+  color: #535f6f;
 }
 .sp-profile-identity p {
   font-size: 13px;
@@ -567,7 +567,7 @@
   background: none;
   padding: 15px 8px;
   min-height: 52px;
-  color: #5f7466;
+  color: #5f6874;
   font-size: 13px;
 }
 .sp-profile-tabs button[aria-pressed="true"] {
@@ -602,7 +602,7 @@
   width: min(480px, 100%);
   border-radius: 14px;
   overflow: hidden;
-  background: #20352c;
+  background: #202935;
 }
 .sp-tour-card .sp-media {
   aspect-ratio: 0.72;
@@ -622,7 +622,7 @@
 .sp-tour-caption > span {
   font-size: 9px;
   letter-spacing: 1px;
-  color: #e6e9e5;
+  color: #e5e7e9;
 }
 .sp-tour-caption strong {
   display: block;
@@ -636,7 +636,7 @@
   margin: 12px 0 9px;
 }
 .sp-tour-caption p {
-  color: #d7e4dc;
+  color: #d7dce4;
   font-size: 12px;
   margin: 0;
 }
@@ -653,7 +653,7 @@
   border: 0;
   background: none;
   font-size: 11px;
-  color: #38614b;
+  color: #384961;
   min-width: 48px;
   min-height: 48px;
 }
@@ -666,7 +666,7 @@
 }
 .sp-tour-pagination > span {
   font-size: 12px;
-  color: #627464;
+  color: #626a74;
 }
 .sp-message-notice {
   display: flex;
@@ -684,8 +684,8 @@
   width: 75px;
   height: 75px;
   flex-shrink: 0;
-  background: #edf4e8;
-  color: #39744b;
+  background: #e8edf4;
+  color: #395274;
   border-radius: 18px;
 }
 .sp-message-notice h2 {
@@ -705,7 +705,7 @@
 }
 .sp-message-notice small {
   display: block;
-  color: #637761;
+  color: #616a77;
   font-size: 11px;
   margin-top: 20px;
 }
@@ -731,7 +731,7 @@
   list-style: none;
   padding: 23px 17px;
   border-bottom: 1px solid var(--sp-line);
-  background: #fafbf9;
+  background: #f9fafb;
 }
 .sp-create-steps li {
   display: flex;
@@ -739,7 +739,7 @@
   align-items: center;
   gap: 9px;
   min-width: 0;
-  color: #637463;
+  color: #636a74;
   text-align: center;
 }
 .sp-create-steps li > span,
@@ -748,11 +748,11 @@
   place-items: center;
   width: 27px;
   height: 27px;
-  border: 1px solid #b0c2ad;
+  border: 1px solid #adb6c2;
   border-radius: 50%;
   background: transparent;
   font-size: 11px;
-  color: #5b7557;
+  color: #576475;
   padding: 4px;
 }
 .sp-create-steps li.active > span,
@@ -776,11 +776,11 @@
   gap: 15px;
   font-size: 10px;
   letter-spacing: 0.7px;
-  color: #5b715e;
+  color: #5b6471;
 }
 .sp-create-step-label > span {
-  background: #edf4e7;
-  color: #46673b;
+  background: #e7ecf4;
+  color: #3b4d67;
   padding: 4px 8px;
   border-radius: 4px;
   letter-spacing: 0;
@@ -808,11 +808,11 @@
   text-align: left;
   min-height: 73px;
   padding: 16px 12px;
-  border: 1px solid #b4c7b4;
+  border: 1px solid #b4bcc7;
   border-radius: 8px;
   background: white;
   font-size: 12px;
-  color: #4c6651;
+  color: #4c5766;
 }
 .sp-property-type-options button > svg:last-child:not(:first-child) {
   position: absolute;
@@ -820,9 +820,9 @@
   top: 9px;
 }
 .sp-property-type-options button[aria-pressed="true"] {
-  background: #edf5e9;
+  background: #e9eef5;
   border-color: var(--sp-teal);
-  color: #12613d;
+  color: #15335e;
 }
 .sp-create-actions {
   display: flex;
@@ -848,8 +848,8 @@
 }
 .sp-draft-tag {
   font-size: 9px;
-  border: 1px solid #bdcdb6;
-  color: #58724b;
+  border: 1px solid #b6c0cd;
+  color: #4b5b72;
   padding: 4px 7px;
   border-radius: 4px;
 }
@@ -872,12 +872,12 @@
 .sp-preview-author small {
   display: block;
   font-size: 11px;
-  color: #5f7462;
+  color: #5f6874;
   margin-top: 5px;
 }
 .sp-preview-photo {
   height: 260px;
-  background: #e8eee2;
+  background: #e2e7ee;
   position: relative;
 }
 .sp-preview-photo > img {
@@ -892,7 +892,7 @@
   flex-direction: column;
   gap: 13px;
   height: 100%;
-  color: #6b8662;
+  color: #627186;
 }
 .sp-preview-photo > div > span {
   font-size: 12px;
@@ -916,16 +916,16 @@
 }
 .sp-live-preview > p {
   font-size: 11px;
-  color: #647660;
+  color: #606976;
   line-height: 1.8;
   padding: 0 5px;
   margin-top: 18px;
 }
 .sp-price-preview {
   padding: 25px;
-  background: #edf4e7;
+  background: #e7ecf4;
   border-radius: 8px;
-  color: #42683a;
+  color: #3a4d68;
 }
 .sp-price-preview > span {
   display: block;
@@ -945,17 +945,17 @@
 .sp-uploader {
   text-align: center;
   padding: 35px 20px;
-  border: 1px dashed #82a48b;
+  border: 1px dashed #8290a4;
   border-radius: 10px;
-  background: #f3f8ee;
+  background: #eef2f8;
   margin-bottom: 23px;
 }
 .sp-uploader.dragging {
-  background: #dbeed6;
+  background: #d6e0ee;
   border: 2px solid var(--sp-teal);
 }
 .sp-uploader > svg {
-  color: #5d8557;
+  color: #576a85;
 }
 .sp-uploader h3 {
   font-size: 21px;
@@ -968,7 +968,7 @@
 .sp-uploader small {
   display: block;
   font-size: 10px;
-  color: #61795a;
+  color: #5a6779;
   margin-top: 18px;
 }
 .sp-upload-grid {
@@ -986,7 +986,7 @@
   border: 3px solid transparent;
   border-radius: 7px;
   overflow: hidden;
-  background: #e6eddf;
+  background: #dfe5ed;
   padding: 0;
 }
 .sp-upload-grid > div > button.selected {
@@ -1002,7 +1002,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #086355dc;
+  background: #133058dc;
   padding: 4px;
   color: white;
   font-size: 10px;
@@ -1021,8 +1021,8 @@
   padding: 5px;
 }
 .sp-review-summary {
-  background: #f4f7f0;
-  border: 1px solid #d8e3cf;
+  background: #f0f3f7;
+  border: 1px solid #cfd7e3;
   padding: 23px;
   border-radius: 9px;
 }
@@ -1042,7 +1042,7 @@
   font-size: 13px;
 }
 .sp-review-summary dt {
-  color: #62775a;
+  color: #5a6677;
 }
 .sp-review-summary dd {
   margin: 0;
@@ -1052,7 +1052,7 @@
 .sp-local-notice {
   font-size: 12px !important;
   line-height: 1.9 !important;
-  color: #566f50 !important;
+  color: #505d6f !important;
   margin-top: 24px;
 }
 .sp-draft-success {
@@ -1683,7 +1683,7 @@
 }
 .sp-detail-back > span {
   font-size: 11px;
-  color: #607362;
+  color: #606873;
 }
 .sp-detail-title {
   display: flex;
@@ -1718,7 +1718,7 @@
 .sp-detail-title > div:last-child > span {
   font-size: 11px;
   display: block;
-  color: #637564;
+  color: #636a75;
   margin-top: 7px;
 }
 .sp-detail-gallery {
@@ -1737,7 +1737,7 @@
 }
 .sp-detail-photo-note > span {
   font-size: 11px;
-  color: #5f7564;
+  color: #5f6875;
 }
 .sp-detail-photo-note > div {
   display: flex;
@@ -1752,7 +1752,7 @@
   padding: 6px 0;
   border: 0;
   background: none;
-  color: #37644b;
+  color: #374a64;
   font-size: 12px;
 }
 .sp-detail-layout {
@@ -1768,7 +1768,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  border-block: 1px solid #d7e3d8;
+  border-block: 1px solid #d7dce3;
   padding: 23px 0;
   margin-bottom: 24px;
 }
@@ -1776,7 +1776,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #4b7756;
+  color: #4b5d77;
 }
 .sp-detail-facts strong {
   display: block;
@@ -1787,7 +1787,7 @@
 }
 .sp-detail-facts span {
   font-size: 11px;
-  color: #63765d;
+  color: #5d6776;
 }
 .sp-detail-layout > article > section {
   padding: 20px 0 28px;
@@ -1808,7 +1808,7 @@
 }
 .sp-detail-data dt {
   font-size: 12px;
-  color: #5e765e;
+  color: #5e6876;
   margin-bottom: 6px;
 }
 .sp-detail-data dd {
@@ -1821,10 +1821,10 @@
   align-items: start;
   gap: 20px;
   padding: 24px;
-  background: #edf4e8;
-  border: 1px solid #d4e2cb;
+  background: #e8edf4;
+  border: 1px solid #cbd5e2;
   border-radius: 9px;
-  color: #376844;
+  color: #374b68;
 }
 .sp-detail-location strong {
   font-size: 17px;
@@ -1838,7 +1838,7 @@
 }
 .sp-detail-contact {
   background: white;
-  border: 1px solid #d8e3d3;
+  border: 1px solid #d3dae3;
   border-radius: 12px;
   padding: 27px;
   align-self: start;
@@ -1869,7 +1869,7 @@
 .sp-contact-identity small {
   display: block;
   font-size: 10px;
-  color: #62775f;
+  color: #5f6977;
   margin-top: 5px;
 }
 .sp-contact-identity > svg {
@@ -1891,7 +1891,7 @@
   display: block;
   font-size: 10px;
   line-height: 1.9;
-  color: #62765d;
+  color: #5d6776;
   margin-top: 22px;
 }
 @media (max-width: 1050px) {
@@ -2041,7 +2041,7 @@
   gap: 10px;
   padding: 11px 0;
   font-size: 13px;
-  color: #43604b;
+  color: #434f60;
 }
 .sp-recent-searches > a > span {
   flex: 1;
@@ -2051,7 +2051,7 @@
   font-size: 11px !important;
   line-height: 1.8 !important;
   margin: 15px 0 0 !important;
-  color: #5b725f !important;
+  color: #5b6572 !important;
 }
 .sp-recent-searches p a,
 .sp-search-privacy a {
@@ -2060,25 +2060,25 @@
 }
 .sp-query-clear {
   border: 0;
-  background: #edf4ea;
-  color: #285d3e;
+  background: #eaeef4;
+  color: #283e5d;
   min-width: 34px;
   min-height: 34px;
   border-radius: 50%;
   font-size: 20px;
 }
 .sp-chrome ~ main .auth-card label {
-  color: #52675c;
+  color: #525b67;
 }
 .sp-chrome ~ main .auth-card small {
-  color: #566c60;
+  color: #565f6c;
 }
 .sp-chrome ~ main .account-profile-copy > p {
-  color: #52675b;
+  color: #525b67;
 }
 .sp-chrome ~ main .account-owner-copy > small {
   color: #7e5839;
 }
 .sp-chrome ~ main .activity-tabs button > b {
-  color: #52675b;
+  color: #525b67;
 }

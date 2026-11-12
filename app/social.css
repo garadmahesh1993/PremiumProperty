@@ -2,12 +2,12 @@
 :root {
   --sp-ink: #162a32;
   --sp-muted: #586970;
-  --sp-teal: #087769;
+  --sp-teal: #173968;
   --sp-gold: #b49760;
-  --sp-bg: #f6f7f7;
-  --sp-line: #e2e7e6;
+  --sp-bg: #f6f6f7;
+  --sp-line: #e2e4e7;
   --sp-surface: #fff;
-  --sp-soft: #e9f3ef;
+  --sp-soft: #e9edf3;
   --sp-radius: 14px;
 }
 .sp-chrome,
@@ -146,11 +146,11 @@
   min-height: 42px;
   max-width: 570px;
   flex: 1;
-  background: #f3f5f4;
-  border: 1px solid #e4e9e6;
+  background: #f3f4f5;
+  border: 1px solid #e4e6e9;
   border-radius: 9px;
   padding: 10px 15px;
-  color: #5a6c69;
+  color: #5a626c;
   text-align: left;
   font-size: 13px;
   margin-left: 25px;
@@ -159,7 +159,7 @@
   margin-left: auto;
   padding: 3px 6px;
   background: white;
-  border: 1px solid #e0e6e3;
+  border: 1px solid #e0e2e6;
   border-radius: 4px;
   font-family: inherit;
   font-size: 10px;
@@ -179,7 +179,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid #dae5df;
+  border: 1px solid #dadfe5;
   padding: 9px 13px;
   border-radius: 8px;
   font-size: 13px;
@@ -192,17 +192,17 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #eff2e9;
-  color: #465b45;
+  background: #e9edf2;
+  color: #454e5b;
   font-size: 13px;
   font-weight: 700;
   flex-shrink: 0;
-  border: 1px solid #dce4d4;
+  border: 1px solid #d4dbe4;
 }
 .sp-top-avatar {
-  background: #e6ecea;
+  background: #e6e9ec;
   border: 3px solid white;
-  box-shadow: 0 0 0 1px #d6dfdb;
+  box-shadow: 0 0 0 1px #d6dadf;
 }
 .sp-mobile-search {
   display: none !important;
@@ -237,12 +237,12 @@
   color: #556366;
 }
 .sp-sidebar nav > a.active {
-  background: #e9f3ee;
-  color: #086954;
+  background: #e9edf3;
+  color: #14325d;
   font-weight: 650;
 }
 .sp-sidebar nav > a:hover {
-  background: #f1f5f2;
+  background: #f1f3f5;
 }
 .sp-sidebar nav > a > small {
   font-size: 9px;
@@ -263,7 +263,7 @@
   justify-content: center;
 }
 .sp-sidebar nav > .sp-sidebar-post:hover {
-  background: #075e53;
+  background: #122d53;
 }
 .sp-sidebar-bottom {
   margin-top: auto;
@@ -283,7 +283,7 @@
 .sp-sidebar-bottom small {
   display: block;
   font-size: 11px;
-  color: #65736b;
+  color: #656b73;
   margin-top: 4px;
 }
 .sp-sidebar-bottom > div {
@@ -291,18 +291,18 @@
   flex-wrap: wrap;
   gap: 9px 13px;
   font-size: 11px;
-  color: #63716d;
+  color: #636971;
 }
 .sp-sidebar-bottom > p {
   font-size: 10px;
-  color: #63716d;
+  color: #636971;
   line-height: 1.8;
   margin-top: 18px;
 }
 .sp-team-avatar {
-  background: #edf1e8;
-  color: #506b42;
-  border: 1px solid #c8d5be;
+  background: #e8ecf1;
+  color: #42536b;
+  border: 1px solid #bec8d5;
 }
 .sp-bottom-nav {
   display: none;
@@ -361,13 +361,13 @@ body:has(.sp-chrome) {
     transform 0.18s;
 }
 .sp-button:hover {
-  background: #075d51;
+  background: #122d52;
   transform: translateY(-1px);
 }
 .sp-button-light {
   background: white;
   color: var(--sp-ink) !important;
-  border-color: #b5c6bd;
+  border-color: #b5bcc6;
 }
 .sp-button-light:hover {
   background: var(--sp-soft);
@@ -396,7 +396,7 @@ body:has(.sp-chrome) {
   font-weight: 650;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #547060;
+  color: #546070;
 }
 .sp-text-link {
   display: inline-flex;
@@ -432,7 +432,7 @@ body:has(.sp-chrome) {
   place-items: center;
   width: 42px;
   height: 42px;
-  border: 1px solid #dbe3df;
+  border: 1px solid #dbdee3;
   border-radius: 10px;
   background: white;
   flex-shrink: 0;
@@ -465,7 +465,7 @@ body:has(.sp-chrome) {
   border: 3px solid var(--sp-bg);
   box-shadow: 0 0 0 1.5px #b6a471;
   overflow: hidden;
-  background: #edf0e5;
+  background: #e5eaf0;
 }
 .sp-story > strong {
   font-size: 10px;
@@ -477,8 +477,8 @@ body:has(.sp-chrome) {
 .sp-story-create > span {
   display: grid;
   place-items: center;
-  box-shadow: 0 0 0 1px #b6c9bc;
-  background: #e7f0e9;
+  box-shadow: 0 0 0 1px #b6bec9;
+  background: #e7ebf0;
   color: var(--sp-teal);
 }
 .sp-feed-tabs {
@@ -497,7 +497,7 @@ body:has(.sp-chrome) {
   font-size: 13px;
   white-space: nowrap;
   padding: 14px 0;
-  color: #63726e;
+  color: #636972;
 }
 .sp-feed-tabs button.active {
   color: var(--sp-teal);
@@ -531,8 +531,8 @@ body:has(.sp-chrome) {
   min-width: 0;
 }
 .sp-editorial-avatar {
-  border: 1px solid #a6b7a7;
-  background: #f1f3ea;
+  border: 1px solid #a6adb7;
+  background: #eaeef3;
   color: var(--sp-teal);
   width: 40px;
   height: 40px;
@@ -549,14 +549,14 @@ body:has(.sp-chrome) {
   align-items: center;
   gap: 3px;
   font-size: 11px;
-  color: #62726b;
+  color: #626972;
   margin-top: 4px;
 }
 .sp-collection-label {
   font-size: 9px;
   font-weight: 500;
-  background: #edf3eb;
-  color: #3d6950;
+  background: #ebeef3;
+  color: #3d4f69;
   padding: 3px 6px;
   border-radius: 4px;
 }
@@ -570,7 +570,7 @@ body:has(.sp-chrome) {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  color: #60746a;
+  color: #606874;
   border-radius: 50%;
 }
 .sp-post-menu > summary::-webkit-details-marker {
@@ -608,12 +608,12 @@ body:has(.sp-chrome) {
 }
 .sp-post-menu button:hover,
 .sp-post-menu a:hover {
-  background: #edf3ed;
+  background: #edf0f3;
 }
 .sp-post-menu > div > span {
   display: block;
   font-size: 10px;
-  color: #63736a;
+  color: #636a73;
   border-top: 1px solid var(--sp-line);
   padding: 12px 10px 6px;
 }
@@ -621,7 +621,7 @@ body:has(.sp-chrome) {
   position: relative;
   aspect-ratio: 1.34;
   overflow: hidden;
-  background: #e8ece5;
+  background: #e5e8ec;
   touch-action: pan-y;
 }
 .sp-open-photo {
@@ -668,8 +668,8 @@ body:has(.sp-chrome) {
   background: #ffffffeb;
   border: 0;
   border-radius: 50%;
-  color: #203d33;
-  box-shadow: 0 2px 12px #0c25251a;
+  color: #202c3d;
+  box-shadow: 0 2px 12px #0c16251a;
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -734,7 +734,7 @@ body:has(.sp-chrome) {
   min-height: 40px;
   padding: 0;
   font-size: 12px;
-  color: #465f54;
+  color: #46505f;
 }
 .sp-post-actions > .saved {
   color: var(--sp-teal);
@@ -765,8 +765,8 @@ body:has(.sp-chrome) {
 }
 .sp-post-price > span {
   font-size: 11px;
-  color: #52685c;
-  background: #f4f6f3;
+  color: #525b68;
+  background: #f3f4f6;
   padding: 4px 8px;
   border-radius: 4px;
 }
@@ -786,7 +786,7 @@ body:has(.sp-chrome) {
   gap: 17px;
   flex-wrap: wrap;
   font-size: 12px;
-  color: #5e7468;
+  color: #5e6774;
   padding-bottom: 19px;
 }
 .sp-post-specs > span {
@@ -795,7 +795,7 @@ body:has(.sp-chrome) {
   gap: 6px;
 }
 .sp-post-specs > span + span {
-  border-left: 1px solid #dce5dd;
+  border-left: 1px solid #dce0e5;
   padding-left: 16px;
 }
 .sp-post-bottom {
@@ -803,10 +803,10 @@ body:has(.sp-chrome) {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  border-top: 1px solid #e7ece7;
+  border-top: 1px solid #e7e9ec;
   min-height: 55px;
   font-size: 11px;
-  color: #64766b;
+  color: #646c76;
 }
 .sp-post-bottom a {
   display: flex;
@@ -870,12 +870,12 @@ body:has(.sp-chrome) {
   align-items: center;
   gap: 5px;
   font-size: 11px;
-  border: 1px solid #dce5df;
+  border: 1px solid #dce0e5;
   border-radius: 20px;
   min-height: 32px;
   padding: 5px 10px;
   background: white;
-  color: #466858;
+  color: #465468;
 }
 .sp-rail-projects {
   display: grid;
@@ -894,7 +894,7 @@ body:has(.sp-chrome) {
   overflow: hidden;
   border-radius: 8px;
   flex-shrink: 0;
-  background: #e2e8df;
+  background: #dfe3e8;
 }
 .sp-rail-projects strong {
   display: block;
@@ -904,7 +904,7 @@ body:has(.sp-chrome) {
 .sp-rail-projects span {
   display: block;
   font-size: 10px;
-  color: #63736b;
+  color: #636a73;
   margin-top: 5px;
 }
 .sp-rail-projects b {
@@ -912,11 +912,11 @@ body:has(.sp-chrome) {
   font-size: 11px;
   margin-top: 6px;
   font-weight: 600;
-  color: #375f48;
+  color: #37485f;
 }
 .sp-team-card {
-  background: #eaf1e9;
-  border: 1px solid #d9e4d4;
+  background: #e9ecf1;
+  border: 1px solid #d4dbe4;
   padding: 20px;
   border-radius: 11px;
 }
@@ -932,7 +932,7 @@ body:has(.sp-chrome) {
 .sp-team-card-top small {
   font-size: 10px;
   display: block;
-  color: #5a715e;
+  color: #5a6471;
   margin-top: 3px;
 }
 .sp-team-card p {
@@ -946,20 +946,20 @@ body:has(.sp-chrome) {
   justify-content: space-between;
   font-size: 12px;
   font-weight: 600;
-  color: #286348;
+  color: #284163;
 }
 .sp-rail-disclaimer {
   display: flex;
   align-items: start;
   gap: 9px;
   padding: 22px 4px;
-  color: #6a7f6c;
+  color: #6a737f;
 }
 .sp-rail-disclaimer p {
   font-size: 10px;
   line-height: 1.8;
   margin: 0;
-  color: #5c7162;
+  color: #5c6571;
 }
 .sp-photo-fallback {
   width: 100%;
@@ -968,8 +968,8 @@ body:has(.sp-chrome) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #eaf0e6;
-  color: #526d51;
+  background: #e6eaf0;
+  color: #515d6d;
 }
 .sp-photo-fallback > span {
   font-size: 45px;
@@ -994,13 +994,13 @@ body:has(.sp-chrome) {
     transform 0.2s;
 }
 .sp-tile:hover {
-  box-shadow: 0 8px 25px #193a2b12;
+  box-shadow: 0 8px 25px #19273a12;
   transform: translateY(-3px);
 }
 .sp-tile-media {
   position: relative;
   aspect-ratio: 1.12;
-  background: #e5ece0;
+  background: #e0e5ec;
 }
 .sp-tile-media > a {
   display: block;
@@ -1028,11 +1028,11 @@ body:has(.sp-chrome) {
   background: #fffffff2;
   display: grid;
   place-items: center;
-  color: #38614d;
+  color: #384961;
 }
 .sp-tile-save[aria-pressed="true"] {
-  background: #e2f0e5;
-  color: #075f4d;
+  background: #e2e8f0;
+  color: #122e54;
 }
 .sp-tile-copy {
   padding: 17px;
@@ -1056,24 +1056,24 @@ body:has(.sp-chrome) {
   gap: 4px;
   font-size: 11px;
   margin: 12px 0;
-  color: #5c7168;
+  color: #5c6571;
 }
 .sp-tile-copy > div {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   font-size: 11px;
-  color: #607868;
+  color: #606a78;
 }
 .sp-tile-copy > div > span + span {
-  border-left: 1px solid #d6e1d8;
+  border-left: 1px solid #d6dbe1;
   padding-left: 12px;
 }
 /* Native dialogs and feedback */
 .sp-modal {
   width: min(540px, calc(100vw - 32px));
   padding: 25px;
-  border: 1px solid #d6e3da;
+  border: 1px solid #d6dbe3;
   border-radius: 15px;
   max-height: 90dvh;
   overflow-y: auto;
@@ -1131,7 +1131,7 @@ body:has(.sp-chrome) {
   border-radius: 5px;
   overflow: hidden;
   padding: 0;
-  background: #eaf0e5;
+  background: #e5eaf0;
 }
 .sp-gallery-thumbs button[aria-pressed="true"] {
   border-color: var(--sp-teal);
@@ -1151,7 +1151,7 @@ body:has(.sp-chrome) {
   align-items: center;
   gap: 10px;
   max-width: calc(100vw - 30px);
-  background: #18372d;
+  background: #182537;
   color: white;
   padding: 13px 20px;
   border-radius: 10px;
@@ -1175,7 +1175,7 @@ body:has(.sp-chrome) {
 .sp-inline-form input {
   min-width: 0;
   flex: 1;
-  border: 1px solid #98ada0;
+  border: 1px solid #98a1ad;
   border-radius: 7px;
   padding: 11px 12px;
   font: inherit;
@@ -1189,8 +1189,8 @@ body:has(.sp-chrome) {
   align-items: center;
   gap: 12px;
   min-height: 57px;
-  border: 1px solid #d1e0d5;
-  background: #f4f8f3;
+  border: 1px solid #d1d7e0;
+  background: #f3f5f8;
   border-radius: 8px;
   padding: 12px;
   text-align: left;
@@ -1220,7 +1220,7 @@ body:has(.sp-chrome) {
 }
 .sp-search-modal .search-tabs button {
   background: none;
-  color: #4f655a;
+  color: #4f5865;
   font-size: 13px;
   padding: 15px 0;
   white-space: nowrap;
@@ -1231,7 +1231,7 @@ body:has(.sp-chrome) {
 }
 .sp-search-modal .home-search-control {
   position: relative;
-  border: 1px solid #9db4a5;
+  border: 1px solid #9da7b4;
   border-radius: 8px;
   margin-top: 17px;
   padding: 8px;
@@ -1293,12 +1293,12 @@ body:has(.sp-chrome) {
 .sp-feed-skeleton > span {
   display: block;
   height: 100px;
-  background: #e1e7e2;
+  background: #e1e3e7;
   border-radius: 12px;
 }
 .sp-feed-skeleton > div {
   height: 600px;
-  background: #e5ebe7;
+  background: #e5e8eb;
   border-radius: 12px;
   margin-top: 25px;
   animation: sp-pulse 1.3s infinite alternate;
@@ -1437,7 +1437,7 @@ body:has(.sp-chrome) {
     right: 0;
     background: rgba(255, 255, 255, 0.98);
     z-index: 50;
-    border-top: 1px solid #dbe4df;
+    border-top: 1px solid #dbdfe4;
     display: flex;
     justify-content: space-around;
     padding: 6px 9px max(7px, env(safe-area-inset-bottom));
@@ -1451,7 +1451,7 @@ body:has(.sp-chrome) {
     gap: 4px;
     min-height: 49px;
     padding: 5px 0;
-    color: #607469;
+    color: #606874;
     font-size: 9px;
   }
   .sp-bottom-nav > a.active {

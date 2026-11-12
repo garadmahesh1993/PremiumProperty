@@ -86,3 +86,16 @@ A separate mobile Lighthouse run against the local `next start` server on port 3
 Raw report: [lighthouse-feed-mobile.json](lighthouse-feed-mobile.json). These scores apply to the measured local feed load, not the entire platform or production users. LCP still needs further optimization before claiming a good field experience; image delivery, critical styles and actual hosting/network behavior should be measured in the next phase. Earlier observer measurements above were unthrottled and are not directly comparable.
 
 The final production smoke check also passed feed hydration/saving, URL-filtered discovery and gallery keyboard interaction, with no failed resources or runtime errors: [production-smoke-results.json](production-smoke-results.json).
+
+## Orange and blue theme update
+
+The requested palette update uses navy/blue branding and navigation, rich orange primary actions and selected accents, and ivory/white surfaces. Shared and retained page colors and the favicon were updated without changing route behavior or listing data.
+
+- Production build and TypeScript compilation: passed.
+- Responsive validation: 63 checks across seven primary pages and all nine requested widths; no horizontal document overflow.
+- Accessibility: zero detected violations in 28 axe page/state scans, including mobile/desktop views, search/gallery/collection dialogs and saved feedback. Muted project and calculator labels found in the first sweep were darkened and rescanned successfully.
+- Runtime page errors: zero observed.
+- Raw results: [orange-blue-theme-validation.json](orange-blue-theme-validation.json).
+- Visual review: [desktop feed](screenshots/orange-blue-feed-1440.png), [mobile feed](screenshots/orange-blue-feed-390.png), [discovery](screenshots/orange-blue-explore-1440.png), [profile](screenshots/orange-blue-profiles-1440.png).
+
+The review used an isolated browser context on the local development server. These checks assess the theme change; earlier functional and performance reports retain their original scope. Automated accessibility checks do not certify complete WCAG conformance.

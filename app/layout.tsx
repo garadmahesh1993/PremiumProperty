@@ -3,6 +3,7 @@ import "./globals.css";
 import "./social.css";
 import "./social-pages.css";
 import "./social-experience.css";
+import "./premium-theme.css";
 import { SocialProvider } from "@/components/social/SocialProvider";
 
 const siteTitle = "Premium Property | Your next move starts here";

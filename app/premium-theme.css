@@ -1,0 +1,167 @@
+/* Premium Property: warm orange actions, tailored blue identity, quiet ivory surfaces. */
+:root {
+  color-scheme: light;
+  --pp-navy: #142b49;
+  --pp-blue: #244d7c;
+  --pp-blue-dark: #183b65;
+  --pp-blue-soft: #edf2f9;
+  --pp-orange: #b84b20;
+  --pp-orange-dark: #963d19;
+  --pp-orange-bright: #e8894c;
+  --pp-orange-soft: #fff1e7;
+  --pp-canvas: #f8f7f4;
+  --pp-muted: #58677a;
+  --pp-border: #dfe5ed;
+
+  --sp-ink: var(--pp-navy);
+  --sp-muted: var(--pp-muted);
+  --sp-bg: var(--pp-canvas);
+  --sp-line: var(--pp-border);
+  --sp-surface: #fff;
+  --sp-soft: var(--pp-blue-soft);
+  --sp-accent: var(--pp-orange);
+  --sp-gold: var(--pp-orange-bright);
+  /* Compatibility aliases keep retained components on the same palette. */
+  --sp-teal: var(--pp-blue);
+  --ink: var(--pp-navy);
+  --muted: var(--pp-muted);
+  --canvas: var(--pp-canvas);
+  --line: var(--pp-border);
+  --teal: var(--pp-blue);
+  --teal-dark: var(--pp-blue-dark);
+  --teal-soft: var(--pp-blue-soft);
+  --orange: var(--pp-orange);
+}
+
+::selection { background: #f5d9c5; color: var(--pp-navy); }
+:focus-visible { outline-color: var(--pp-blue); }
+.sp-chrome :focus-visible,
+.sp-main :focus-visible,
+.sp-modal :focus-visible { outline-color: var(--pp-blue); }
+input[type="checkbox"], input[type="radio"], input[type="range"] { accent-color: var(--pp-blue); }
+
+.sp-brand, .brand-name { color: var(--pp-navy); }
+.sp-brand > span:last-child > span { color: var(--pp-blue); }
+.sp-brand .sp-brand-dot { color: var(--pp-orange); }
+.sp-logo, .brand-mark { background: var(--pp-navy); color: #fff; }
+.sp-logo > svg { stroke: var(--pp-orange-bright); }
+.brand-mark .brand-mark-door { fill: var(--pp-orange-bright); stroke: var(--pp-orange-bright); }
+.sp-global-search { background: #f3f5f8; border-color: var(--pp-border); color: var(--pp-muted); }
+.sp-topbar, .sp-sidebar, .sp-bottom-nav { border-color: var(--pp-border); }
+
+.sp-sidebar nav > a.active {
+  color: var(--pp-blue-dark);
+  background: var(--pp-blue-soft);
+  box-shadow: inset 3px 0 0 var(--pp-orange);
+}
+.sp-sidebar nav > a:hover { background: #f3f5f9; }
+.sp-sidebar nav > a > small { color: #8b421e; background: var(--pp-orange-soft); }
+.sp-sidebar nav > .sp-sidebar-post,
+.sp-create-top,
+.sp-button,
+.button-orange,
+.home-search-submit {
+  color: #fff !important;
+  background: var(--pp-orange);
+  border-color: var(--pp-orange);
+}
+.sp-sidebar nav > .sp-sidebar-post:hover,
+.sp-create-top:hover,
+.sp-button:hover,
+.button-orange:hover,
+.home-search-submit:hover { background: var(--pp-orange-dark); border-color: var(--pp-orange-dark); }
+.sp-button.sp-button-light, .sp-main .sp-button-light {
+  color: var(--pp-blue-dark) !important;
+  background: #fff;
+  border-color: #bac9dc;
+}
+.sp-button.sp-button-light:hover, .sp-main .sp-button-light:hover {
+  background: var(--pp-blue-soft);
+  border-color: #a6bbd4;
+}
+.button-teal { background: var(--pp-blue); }
+.button-teal:hover { background: var(--pp-blue-dark); }
+.sp-search-modal .home-search-submit { background: var(--pp-orange); }
+.sp-bottom-nav > a.active { color: var(--pp-blue-dark); }
+.sp-bottom-nav > a.active > svg { stroke: var(--pp-orange); }
+
+.sp-avatar, .sp-profile-avatar {
+  color: var(--pp-blue);
+  background: var(--pp-blue-soft);
+  border-color: #d2deed;
+}
+.sp-team-avatar { color: var(--pp-orange); background: var(--pp-orange-soft); border-color: #ebc8b2; }
+.sp-profile-avatar { box-shadow: 0 0 0 1px var(--pp-border); }
+.sp-top-avatar { background: var(--pp-blue-soft); box-shadow: 0 0 0 1px var(--pp-border); }
+.sp-collection-label { background: var(--pp-blue-soft); color: var(--pp-blue-dark) !important; }
+.sp-story > span { box-shadow: 0 0 0 1.5px #cc794c; }
+.sp-story-create > span {
+  color: var(--pp-orange);
+  background: var(--pp-orange-soft);
+  box-shadow: 0 0 0 1px #e7c9b4;
+}
+.sp-feed-tabs button.active {
+  color: var(--pp-orange);
+  border-bottom-color: var(--pp-orange);
+}
+.sp-page-heading h1 > span,
+.sp-feed-heading h1 > span,
+.sp-account-intro h1 span { color: var(--pp-orange); }
+.sp-post-actions > .saved,
+.sp-tile-save[aria-pressed="true"] { color: var(--pp-orange); }
+.sp-tile-save[aria-pressed="true"] { background: var(--pp-orange-soft); }
+.sp-media-counter { background: #142b49e6; }
+.sp-post-price > strong, .sp-tile-copy > strong, .sp-detail-title strong { color: var(--pp-navy); }
+.sp-main .sp-post-price > span { color: var(--pp-blue-dark); background: var(--pp-blue-soft); }
+.sp-post-specs, .sp-tile-copy > div, .sp-post-bottom { color: var(--pp-muted); }
+.sp-area-tags a { color: var(--pp-blue-dark); border-color: #d7e1ee; }
+
+.sp-team-card {
+  background: linear-gradient(130deg, #1b3b64, #142b49);
+  border-color: #244d7c;
+  color: #fff;
+}
+.sp-team-card-top strong { color: #fff; }
+.sp-team-card-top small, .sp-main .sp-team-card p { color: #e0e8f3; }
+.sp-team-card > a { color: #ffbd91; }
+.sp-rail-projects b { color: var(--pp-blue); }
+.sp-feature-icon { color: var(--pp-orange); background: var(--pp-orange-soft); }
+.sp-toast { background: var(--pp-navy); color: #fff; }
+.sp-toast > svg { color: #ffbd91; }
+
+.sp-category-chips > button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--pp-blue-dark);
+  border-color: var(--pp-blue-dark);
+}
+.sp-active-chips > button { color: var(--pp-blue-dark); background: var(--pp-blue-soft); border-color: #d3deec; }
+.sp-collection-grid > button {
+  color: var(--pp-blue-dark);
+  background: linear-gradient(125deg, #edf2f9, #fafbfd);
+  border-color: var(--pp-border);
+}
+.sp-collection-grid > button.active {
+  outline-color: var(--pp-orange);
+  background: var(--pp-orange-soft);
+}
+.sp-collection-choices button { color: var(--pp-blue-dark); background: var(--pp-blue-soft); border-color: #d3deec; }
+.sp-account-intro {
+  background: linear-gradient(115deg, #eaf0f8, #faf6f0);
+  border-color: var(--pp-border);
+}
+.account-page .account-owner-banner { background: var(--pp-orange-soft); border-color: #edd2bf; }
+.account-page .account-owner-copy b,
+.account-page .account-owner-copy > small { color: #973e1a; }
+.sp-composer-steps > li.active > span { color: var(--pp-blue-dark); background: var(--pp-blue-soft); }
+.sp-composer-steps > li[aria-current="step"] > span { color: #fff; background: var(--pp-orange); }
+.sp-uploader { border-color: #aabed7; background: #f5f8fc; }
+.sp-uploader > svg { color: var(--pp-blue); }
+.sp-uploader.dragging { outline-color: var(--pp-orange); }
+.sp-composer-preview-photo { background: linear-gradient(135deg, #e7eef8, #f8f3ed); color: var(--pp-blue); }
+.sp-draft-notice { background: #f6f2ec; color: var(--pp-muted); }
+.sp-detail-location { background: var(--pp-blue-soft); border-color: #d3deec; color: var(--pp-blue-dark); }
+.sp-empty > svg { color: var(--pp-orange); }
+.project-info > small,
+.emi-result > span,
+.emi-result > small,
+.tool-callout > p { color: var(--pp-muted); }
