@@ -1,6 +1,6 @@
-# PremiumProperty frontend demo
+# Premium Property social discovery
 
-A responsive Next.js frontend for a real-estate discovery and broker workflow concept. The interface follows the supplied visual references' teal/orange palette, clean white surfaces, rounded cards, and restrained typography while retaining the PremiumProperty identity.
+A Next.js property-discovery application with a visual social feed, app navigation, saved collections and a local property-post composer. Existing sample data, search routes and browser-local account workflows are preserved.
 
 ## Run in IntelliJ IDEA
 
@@ -35,23 +35,25 @@ The key is visible in browser requests, so website/API restrictions are essentia
 
 ## Main routes and interactions
 
-- `/` — responsive home page with Buy, Rent, Commercial, PG/Co-living and Plots search tabs, city suggestions, search and listing links.
-- Header — Location city menu and hover-open For Buyers, For Tenants, For Sellers, Services, and News & Guides menus. The menus also work by keyboard focus and by tap on small screens.
-- `/explore` — results page with purpose, category, property type, city, keyword, bedroom/BHK, budget, furnishing and verification filters; sorting, demo-map toggle, shortlist and saved searches.
-- `/property/pp-101` — property details, saved property control and enquiry/site-visit demo actions.
-- `/projects` and `/project/the-canopy` — project directory and detail page.
-- `/post-property` — six-step property draft.
-- `/login` — simulated phone/code sign-in; no SMS is sent.
-- `/account` — saved homes and searches stored in this browser.
-- `/dashboard` — sample broker workspace.
-- `/services` — EMI calculator, affordability links, indicative price planner and printable demo rent receipt.
-- `/guides` — buying, renting, selling and neighbourhood checklists.
+- `/` - property post feed with four-post URL pagination, neighbourhood shortcuts, swipeable galleries, saves, sharing and collections.
+- App navigation - desktop sidebar and search/create top bar; mobile Home, Explore, Reels, Saved and Profile bottom bar.
+- `/explore` - visual catalog, project discovery, URL filters, sorting, active chips, responsive filter dialog and browser-local saved/recent searches.
+- `/buy`, `/rent`, `/commercial`, `/pg`, `/plots` - discovery with category defaults.
+- `/property/pp-101` - full gallery, property facts and existing public business email/phone inquiry links. No online visit booking.
+- `/saved` - browser-local saved properties and named private collections.
+- `/profiles/premium-property`, `/profiles/aj-nova-reality` - editorial/platform-operator profiles; sample listings are not attributed to an individual seller.
+- `/post-property` - six-step local draft with validation, photo previews, cover selection, live preview and recovery.
+- `/reels`, `/messages` - clearly unavailable, with working gallery/contact alternatives.
+- `/projects`, `/project/the-canopy` - existing sample projects.
+- `/login`, `/signup`, `/account` - existing simulated sign-in and local profile/activity.
+- `/services`, `/guides`, `/dashboard` - retained tools, guidance and illustrative broker workspace.
+
+Implementation, research, design, testing and backend requirements are recorded in the five `docs/PREMIUM_PROPERTY_SOCIAL_*.md` reports. Run `npm test`, `npm run typecheck` and `npm run build` for checks. With a local server running, use `npm run test:social`; `QA_URL` selects its address. Browser tests require Playwright Chromium (`npx playwright install chromium`). `node scripts/social-final-review.cjs` and `npm run test:performance` default to a production preview at `http://127.0.0.1:3100`.
 
 ## Demo limitations
 
-This is a frontend demo. Property and project content is fictional. Favorites, saved searches, the account stub and listing draft are stored locally in the current browser. The sign-in code is simulated; no SMS, real account, server, property database, file upload, notification, or messaging service is connected. Google Places is available for homepage suggestions when configured; Photon/OpenStreetMap is used without a Google key. Enquiry and site-visit actions show a local demo confirmation only. Replace the demo data and connect a secure backend before using this as a live property service.
+This remains a frontend demo. The original property/project content is fictional. Saves, collections, searches, account details and text drafts stay in this browser. Draft photo blobs are retained in this browser's IndexedDB; no media is uploaded or published. Sign-in is simulated and does not verify identity or send SMS. No server database, messaging, video, notifications, listing publication or visit-booking service is connected.
 
-Sample photos load from Unsplash and need an internet connection.
+Google Places remains optional for global location suggestions; Photon/OpenStreetMap is the fallback. Inquiry links open the existing public business Gmail compose page or your phone handler; the app does not send or confirm a message. Shared listing media uses cached local sample photos with responsive Next Image delivery; some retained project/secondary-page images still use external URLs.
 
-
-
+No deployment, commit or push is included in this work. Connect secure backend services and replace illustrative data with authorized real inventory before commercial use.

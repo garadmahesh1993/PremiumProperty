@@ -6,3 +6,5 @@ dist/
 !.env.example
 *.tsbuildinfo
 .next-production/
+.next-social-validation/
+artifacts/

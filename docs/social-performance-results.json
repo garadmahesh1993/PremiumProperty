@@ -1,0 +1,91 @@
+{
+  "base": "http://127.0.0.1:3100",
+  "measuredAt": "2026-11-12T15:55:52.284Z",
+  "environment": "Local production Next.js server; headless Chromium; no CPU/network throttling; fresh browser context each run; server image cache may be warm. Not production field data. No INP or Lighthouse score measured.",
+  "results": [
+    {
+      "width": 390,
+      "run": 1,
+      "lcpMs": 452,
+      "cls": 0,
+      "ttfbMs": 5,
+      "domContentLoadedMs": 57,
+      "loadMs": 111,
+      "transferBytes": 342771,
+      "resourceCount": 44,
+      "imageRequests": 8,
+      "domElements": 593,
+      "postCount": 4
+    },
+    {
+      "width": 390,
+      "run": 2,
+      "lcpMs": 300,
+      "cls": 0,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 47,
+      "loadMs": 127,
+      "transferBytes": 343763,
+      "resourceCount": 46,
+      "imageRequests": 8,
+      "domElements": 593,
+      "postCount": 4
+    },
+    {
+      "width": 390,
+      "run": 3,
+      "lcpMs": 308,
+      "cls": 0,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 60,
+      "loadMs": 120,
+      "transferBytes": 342772,
+      "resourceCount": 44,
+      "imageRequests": 8,
+      "domElements": 593,
+      "postCount": 4
+    },
+    {
+      "width": 1440,
+      "run": 1,
+      "lcpMs": 332,
+      "cls": 0,
+      "ttfbMs": 5,
+      "domContentLoadedMs": 54,
+      "loadMs": 186,
+      "transferBytes": 476659,
+      "resourceCount": 79,
+      "imageRequests": 7,
+      "domElements": 596,
+      "postCount": 4
+    },
+    {
+      "width": 1440,
+      "run": 2,
+      "lcpMs": 344,
+      "cls": 0,
+      "ttfbMs": 5,
+      "domContentLoadedMs": 53,
+      "loadMs": 202,
+      "transferBytes": 476164,
+      "resourceCount": 78,
+      "imageRequests": 7,
+      "domElements": 596,
+      "postCount": 4
+    },
+    {
+      "width": 1440,
+      "run": 3,
+      "lcpMs": 340,
+      "cls": 0,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 66,
+      "loadMs": 120,
+      "transferBytes": 475653,
+      "resourceCount": 77,
+      "imageRequests": 7,
+      "domElements": 596,
+      "postCount": 4
+    }
+  ]
+}

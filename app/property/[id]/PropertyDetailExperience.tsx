@@ -1,63 +1,253 @@
-"use client";
-
+﻿"use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { demoListings, getListing, getListingGallery } from "@/lib/demo-data";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SaveButton } from "@/components/property/SaveButton";
-import { ListingCard } from "@/components/property/ListingCard";
-
-const supportEmail = "ajnovarealty@gmail.com";
-const supportPhone = "+919607319219";
-
+import { demoListings, getListing } from "@/lib/demo-data";
+import { SocialShell } from "@/components/social/SocialShell";
+import { MediaGallery } from "@/components/social/MediaGallery";
+import { PropertyTile } from "@/components/social/PropertyTile";
+import { Icon } from "@/components/social/Icon";
+import { useSocial } from "@/components/social/SocialProvider";
+import { shareProperty } from "@/components/social/PropertyPost";
 export function PropertyDetailExperience({ id }: { id: string }) {
   const item = getListing(id);
-  const [galleryIndex, setGalleryIndex] = useState(0);
-
+  const [back, setBack] = useState("/");
+  const { saved, toggleSave, addToCollection, notify } = useSocial();
   useEffect(() => {
     try {
+      const previous = sessionStorage.getItem("pp-social-return");
+      if (
+        previous &&
+        /^\/(?:\?|$|explore(?:\?|$)|buy(?:\?|$)|rent(?:\?|$)|commercial(?:\?|$)|pg(?:\?|$)|plots(?:\?|$))/.test(
+          previous,
+        )
+      )
+        setBack(previous);
       const seen = JSON.parse(localStorage.getItem("premiumproperty-seen") || "[]");
-      const ids = Array.isArray(seen) ? seen.map(String) : [];
-      localStorage.setItem("premiumproperty-seen", JSON.stringify([id, ...ids.filter((savedId) => savedId !== id)].slice(0, 30)));
+      localStorage.setItem(
+        "premiumproperty-seen",
+        JSON.stringify(
+          [id, ...(Array.isArray(seen) ? seen : []).filter((value) => value !== id)].slice(0, 30),
+        ),
+      );
       window.dispatchEvent(new Event("pp-account-activity"));
-    } catch { /* The property page still works if browser storage is unavailable. */ }
+    } catch {}
   }, [id]);
-
-  if (!item) return <><SiteHeader/><main id="main-content" className="route-page empty-state"><h1>Listing not found</h1><p>This property may no longer be available.</p><Link className="button button-teal" href="/explore">Browse homes</Link></main><SiteFooter/></>;
-
-  const gallery = getListingGallery(item);
-  const previousPhoto = () => setGalleryIndex((index) => (index - 1 + gallery.length) % gallery.length);
-  const nextPhoto = () => setGalleryIndex((index) => (index + 1) % gallery.length);
-  const emailSubject = encodeURIComponent(`Property enquiry: ${item.title}`);
-  const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(supportEmail)}&su=${emailSubject}`;
-  const similar = demoListings.filter((listing) => listing.id !== item.id && listing.category === item.category).slice(0, 2);
-
-  return <><SiteHeader/><main id="main-content" className="route-page property-page">
-    <Link className="back-link" href="/explore">← Back to properties</Link>
-    <section className="property-gallery" aria-label={`Illustrative photo gallery for ${item.title}`}>
-      <img src={gallery[galleryIndex]} alt={`${item.kind} photo ${galleryIndex + 1} of ${gallery.length}: ${item.locality}, ${item.city}`} fetchPriority="high" decoding="async"/>
-      <span className="demo-tag">SAMPLE PROPERTY</span>
-      {gallery.length > 1 && <><div className="property-gallery-controls"><button type="button" aria-label="Previous property photo" onClick={previousPhoto}>‹</button><span aria-live="polite">{galleryIndex + 1} / {gallery.length}</span><button type="button" aria-label="Next property photo" onClick={nextPhoto}>›</button></div><div className="property-gallery-thumbnails">{gallery.map((photo, index) => <button type="button" key={photo} aria-label={`Show photo ${index + 1}`} aria-pressed={galleryIndex === index} className={galleryIndex === index ? "is-active" : ""} onClick={() => setGalleryIndex(index)}><img src={photo} alt="" loading="lazy" decoding="async"/></button>)}</div></>}
-      <p className="property-gallery-caption">Illustrative photos · listing information is sample content</p>
-    </section>
-    <div className="property-layout"><article className="property-content">
-      <span className="eyebrow">{item.kind} · {item.locality}, {item.city}</span><h1>{item.title}</h1>
-      <div className="property-detail-price"><strong>{item.priceLabel}</strong><span>{item.purpose === "buy" ? "Asking price · for sale" : "Monthly rent"}</span></div>
-      <p className="property-description">{item.description}</p>
-      <h2>Property facts</h2><div className="property-facts"><span><b>{item.bedrooms || "—"}</b> Bedrooms</span><span><b>{item.bathrooms || "—"}</b> Bathrooms</span><span><b>{item.area.toLocaleString("en-IN")}</b> sq.ft.</span><span><b>{item.furnishing}</b> Furnishing</span></div>
-      <h2>About this property</h2><p>{item.description} This fictional sample listing demonstrates the property experience. Verify property details independently before making a decision.</p>
-      <h2>Location</h2><div className="location-placeholder"><span aria-hidden="true">⌖</span><div><strong>{item.locality}, {item.city}</strong><p>The location preview is illustrative and does not show a precise address.</p></div></div>
-      {similar.length > 0 && <><h2>Similar properties</h2><div className="listing-grid">{similar.map((listing) => <ListingCard item={listing} key={listing.id}/>)}</div></>}
-    </article><aside className="contact-card property-contact-card"><span>PROPERTY ENQUIRY</span><strong>{item.priceLabel}</strong><p>Ask AJ NOVA REALITY about this sample listing.</p><SaveButton id={item.id}/><a className="button button-orange" href={emailHref} target="_blank" rel="noreferrer" onClick={() => recordContact(id)}>Email about this property →</a><a className="button button-outline" href={`tel:${supportPhone}`} onClick={() => recordContact(id)}>Call +91 9607319219</a><small>This is sample listing content. No owner contact or availability is verified.</small></aside></div>
-  </main><SiteFooter/></>;
+  if (!item)
+    return (
+      <SocialShell rail={false}>
+        <div className="sp-empty">
+          <Icon name="home" size={35} />
+          <h1>Property not found</h1>
+          <p>Explore our sample collection to find another place.</p>
+          <Link href="/explore" className="sp-button">
+            Explore properties
+          </Link>
+        </div>
+      </SocialShell>
+    );
+  const isSaved = saved.includes(id);
+  const email = `https://mail.google.com/mail/?view=cm&fs=1&to=ajnovarealty%40gmail.com&su=${encodeURIComponent(`Property enquiry: ${item.title} (${item.id})`)}`;
+  const similar = demoListings
+    .filter(
+      (value) =>
+        value.id !== id && value.category === item.category && value.purpose === item.purpose,
+    )
+    .slice(0, 3);
+  return (
+    <SocialShell rail={false}>
+      <div className="sp-detail">
+        <div className="sp-detail-back">
+          <Link href={back} className="sp-text-link">
+            <Icon name="back" size={16} />
+            Back to discovery
+          </Link>
+          <span>Sample property · {item.id.toUpperCase()}</span>
+        </div>
+        <div className="sp-detail-title">
+          <div>
+            <span className="sp-label">
+              {item.kind} · {item.purpose === "buy" ? "For sale" : "For rent"}
+            </span>
+            <h1>{item.title}</h1>
+            <p>
+              <Icon name="pin" size={17} />
+              {item.locality}, {item.city}
+            </p>
+          </div>
+          <div>
+            <strong>{item.priceLabel}</strong>
+            <span>{item.purpose === "buy" ? "Total asking price" : "Monthly rent"}</span>
+          </div>
+        </div>
+        <div className="sp-detail-gallery">
+          <MediaGallery item={item} eager />
+        </div>
+        <div className="sp-detail-photo-note">
+          <span>Illustrative photography · Not a live property offer</span>
+          <div>
+            <button type="button" onClick={() => toggleSave(id)} aria-pressed={isSaved}>
+              <Icon name="bookmark" size={18} fill={isSaved ? "currentColor" : "none"} />
+              {isSaved ? "Saved" : "Save"}
+            </button>
+            <button type="button" onClick={() => shareProperty(item, notify)}>
+              <Icon name="share" size={18} />
+              Share
+            </button>
+            <button type="button" onClick={() => addToCollection(id)}>
+              <Icon name="plus" size={18} />
+              Collection
+            </button>
+          </div>
+        </div>
+        <div className="sp-detail-layout">
+          <article>
+            <div className="sp-detail-facts">
+              {item.bedrooms > 0 && (
+                <div>
+                  <Icon name="bed" size={24} />
+                  <span>
+                    <strong>{item.bedrooms} BHK</strong>Bedrooms
+                  </span>
+                </div>
+              )}
+              {item.bathrooms > 0 && (
+                <div>
+                  <Icon name="home" size={23} />
+                  <span>
+                    <strong>{item.bathrooms} baths</strong>Bathrooms
+                  </span>
+                </div>
+              )}
+              <div>
+                <Icon name="area" size={24} />
+                <span>
+                  <strong>{item.area.toLocaleString("en-IN")}</strong>Square feet
+                </span>
+              </div>
+            </div>
+            <section>
+              <h2>About this space</h2>
+              <p>{item.description}</p>
+            </section>
+            <section>
+              <h2>The property details</h2>
+              <dl className="sp-detail-data">
+                <div>
+                  <dt>Property type</dt>
+                  <dd>{item.kind}</dd>
+                </div>
+                <div>
+                  <dt>Furnishing</dt>
+                  <dd>{item.furnishing}</dd>
+                </div>
+                <div>
+                  <dt>Listing purpose</dt>
+                  <dd>{item.purpose === "buy" ? "For sale" : "For rent"}</dd>
+                </div>
+                <div>
+                  <dt>Listing label (sample)</dt>
+                  <dd>{item.badge}</dd>
+                </div>
+                <div>
+                  <dt>Availability</dt>
+                  <dd>Not verified</dd>
+                </div>
+                <div>
+                  <dt>Posting date</dt>
+                  <dd>Not provided</dd>
+                </div>
+              </dl>
+            </section>
+            <section>
+              <h2>Amenities</h2>
+              <p>Amenities have not been provided in the current sample listing data.</p>
+            </section>
+            <section>
+              <h2>Location</h2>
+              <div className="sp-detail-location">
+                <Icon name="pin" size={30} />
+                <div>
+                  <strong>
+                    {item.locality}, {item.city}
+                  </strong>
+                  <p>A precise address has not been provided.</p>
+                  <Link
+                    className="sp-text-link"
+                    href={`/explore?city=${encodeURIComponent(item.city)}&q=${encodeURIComponent(item.locality)}`}
+                  >
+                    Explore this neighbourhood <Icon name="arrow" size={16} />
+                  </Link>
+                </div>
+              </div>
+            </section>
+          </article>
+          <aside className="sp-detail-contact" id="inquiry">
+            <span className="sp-label">A conversation about your next move</span>
+            <h2>Want to know more?</h2>
+            <Link className="sp-contact-identity" href="/profiles/aj-nova-reality">
+              <span className="sp-avatar sp-team-avatar">AN</span>
+              <span>
+                <strong>AJ NOVA REALITY</strong>
+                <small>Premium Property platform team</small>
+              </span>
+              <Icon name="arrow" size={15} />
+            </Link>
+            <p>Contact the team about this sample property or for help with your search.</p>
+            <a
+              className="sp-button"
+              href={email}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => recordContact(id)}
+            >
+              <Icon name="mail" size={18} />
+              Enquire by email <Icon name="arrow" size={16} />
+            </a>
+            <a
+              className="sp-button sp-button-light"
+              href="tel:+919607319219"
+              onClick={() => recordContact(id)}
+            >
+              <Icon name="phone" size={17} />
+              +91 96073 19219
+            </a>
+            <small>
+              Opens Gmail in a new tab or your phone app. This website does not send messages, book
+              visits or collect payments. Owner identity and availability are not verified.
+            </small>
+          </aside>
+        </div>
+        <div className="sp-section-row">
+          <h2>More spaces, more possibilities</h2>
+          <Link href="/explore" className="sp-text-link">
+            Explore all <Icon name="arrow" size={16} />
+          </Link>
+        </div>
+        {similar.length ? (
+          <div className="sp-visual-grid">
+            {similar.map((value) => (
+              <PropertyTile item={value} key={value.id} />
+            ))}
+          </div>
+        ) : (
+          <p className="sp-muted">No other sample properties in this category yet.</p>
+        )}
+      </div>
+    </SocialShell>
+  );
 }
-
 function recordContact(id: string) {
   try {
-    const existing = JSON.parse(localStorage.getItem("premiumproperty-contacted") || "[]");
-    const ids = Array.isArray(existing) ? existing.map(String) : [];
-    localStorage.setItem("premiumproperty-contacted", JSON.stringify([id, ...ids.filter((savedId) => savedId !== id)].slice(0, 30)));
+    const current = JSON.parse(localStorage.getItem("premiumproperty-contacted") || "[]");
+    localStorage.setItem(
+      "premiumproperty-contacted",
+      JSON.stringify(
+        [id, ...(Array.isArray(current) ? current : []).filter((value) => value !== id)].slice(
+          0,
+          30,
+        ),
+      ),
+    );
     window.dispatchEvent(new Event("pp-account-activity"));
-  } catch { /* Keep the contact action available if browser storage is unavailable. */ }
+  } catch {}
 }

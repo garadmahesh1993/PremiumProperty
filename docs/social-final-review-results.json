@@ -1,0 +1,249 @@
+{
+  "base": "http://127.0.0.1:3100",
+  "responsive": [
+    {
+      "width": 320,
+      "route": "/explore",
+      "scrollWidth": 320
+    },
+    {
+      "width": 320,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 320
+    },
+    {
+      "width": 320,
+      "route": "/account",
+      "scrollWidth": 320
+    },
+    {
+      "width": 360,
+      "route": "/explore",
+      "scrollWidth": 360
+    },
+    {
+      "width": 360,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 360
+    },
+    {
+      "width": 360,
+      "route": "/account",
+      "scrollWidth": 360
+    },
+    {
+      "width": 375,
+      "route": "/explore",
+      "scrollWidth": 375
+    },
+    {
+      "width": 375,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 375
+    },
+    {
+      "width": 375,
+      "route": "/account",
+      "scrollWidth": 375
+    },
+    {
+      "width": 390,
+      "route": "/explore",
+      "scrollWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/account",
+      "scrollWidth": 390
+    },
+    {
+      "width": 430,
+      "route": "/explore",
+      "scrollWidth": 430
+    },
+    {
+      "width": 430,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 430
+    },
+    {
+      "width": 430,
+      "route": "/account",
+      "scrollWidth": 430
+    },
+    {
+      "width": 768,
+      "route": "/explore",
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "/account",
+      "scrollWidth": 768
+    },
+    {
+      "width": 1024,
+      "route": "/explore",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/account",
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1280,
+      "route": "/explore",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/account",
+      "scrollWidth": 1280
+    },
+    {
+      "width": 1440,
+      "route": "/explore",
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/profiles/aj-nova-reality",
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/account",
+      "scrollWidth": 1440
+    }
+  ],
+  "accessibility": [
+    {
+      "name": "composer-390-step-1",
+      "violations": []
+    },
+    {
+      "name": "composer-390-step-2",
+      "violations": []
+    },
+    {
+      "name": "composer-390-step-3",
+      "violations": []
+    },
+    {
+      "name": "composer-390-step-4",
+      "violations": []
+    },
+    {
+      "name": "composer-390-step-5",
+      "violations": []
+    },
+    {
+      "name": "composer-390-step-6",
+      "violations": []
+    },
+    {
+      "name": "composer-1440-step-1",
+      "violations": []
+    },
+    {
+      "name": "composer-1440-step-2",
+      "violations": []
+    },
+    {
+      "name": "composer-1440-step-3",
+      "violations": []
+    },
+    {
+      "name": "composer-1440-step-4",
+      "violations": []
+    },
+    {
+      "name": "composer-1440-step-5",
+      "violations": []
+    },
+    {
+      "name": "composer-1440-step-6",
+      "violations": []
+    },
+    {
+      "name": "gallery-dialog",
+      "violations": []
+    },
+    {
+      "name": "collection-dialog",
+      "violations": []
+    },
+    {
+      "name": "filter-dialog-final",
+      "violations": []
+    },
+    {
+      "name": "/explore-390-final",
+      "violations": []
+    },
+    {
+      "name": "/profiles/aj-nova-reality-390-final",
+      "violations": []
+    },
+    {
+      "name": "/account-390-final",
+      "violations": []
+    },
+    {
+      "name": "/property/pp-101-390-final",
+      "violations": []
+    },
+    {
+      "name": "/explore-1440-final",
+      "violations": []
+    },
+    {
+      "name": "/profiles/aj-nova-reality-1440-final",
+      "violations": []
+    },
+    {
+      "name": "/account-1440-final",
+      "violations": []
+    },
+    {
+      "name": "/property/pp-101-1440-final",
+      "violations": []
+    }
+  ],
+  "keyboard": [
+    "Native gallery dialog keeps Tab focus inside",
+    "Native filter dialog keeps Tab focus inside"
+  ],
+  "screenshots": [
+    "docs/screenshots/explore-390.png",
+    "docs/screenshots/profiles-390.png",
+    "docs/screenshots/account-390.png",
+    "docs/screenshots/property-390.png",
+    "docs/screenshots/explore-1440.png",
+    "docs/screenshots/profiles-1440.png",
+    "docs/screenshots/account-1440.png",
+    "docs/screenshots/property-1440.png"
+  ],
+  "completed": "2026-11-12T15:50:12.890Z"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "errors": [],
+  "badResources": [],
+  "checks": [
+    "Production feed hydration and save interaction",
+    "Production URL-filtered results",
+    "Production gallery keyboard and close",
+    "No failed resource requests or runtime errors"
+  ]
+}

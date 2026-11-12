@@ -35,7 +35,9 @@
     "**/*.tsx",
     ".next/dev/types/**/*.ts",
     ".next-production/types/**/*.ts",
-    ".next-production/dev/types/**/*.ts"
+    ".next-production/dev/types/**/*.ts",
+    ".next-social-validation/types/**/*.ts",
+    ".next-social-validation/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

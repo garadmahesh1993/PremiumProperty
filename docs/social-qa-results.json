@@ -1,0 +1,1212 @@
+{
+  "base": "http://127.0.0.1:3100",
+  "started": "2026-11-12T15:53:54.818Z",
+  "checks": [
+    {
+      "name": "Feed carousel, fullscreen keyboard, Escape and focus restoration",
+      "status": "passed"
+    },
+    {
+      "name": "Save persists through navigation and refresh; collections organize and remove",
+      "status": "passed"
+    },
+    {
+      "name": "Feed tabs and bounded URL pagination; invalid page recovery",
+      "status": "passed"
+    },
+    {
+      "name": "Explore search, project discovery, URL sync, Back, sorting and empty recovery",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile filters modal, keyboard trap and applied filter chips",
+      "status": "passed"
+    },
+    {
+      "name": "Detail facts, local seen history and explicit business inquiry links",
+      "status": "passed"
+    },
+    {
+      "name": "Posting preserves gate and simulated sign-in returns to draft",
+      "status": "passed"
+    },
+    {
+      "name": "Composer validation, image validation, cover, recovery and complete local draft",
+      "status": "passed"
+    },
+    {
+      "name": "Share clipboard fallback and native payload; reduced motion is respected",
+      "status": "passed"
+    },
+    {
+      "name": "Blocked browser storage reports save failure without a false success",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 320px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 360px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 375px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 390px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 430px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 768px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1024px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1280px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /explore",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /saved",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /profiles/premium-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /profiles/aj-nova-reality",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /property/pp-101",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /post-property",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /account",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /reels",
+      "status": "passed"
+    },
+    {
+      "name": "responsive 1440px /messages",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /buy",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /rent",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /commercial",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /pg",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /plots",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /projects",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /project/the-canopy",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /about",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /contact",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /services",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /guides",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /privacy",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /terms",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /login",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /signup",
+      "status": "passed"
+    },
+    {
+      "name": "legacy route /dashboard",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "route": "/",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/explore",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/saved",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/profiles/premium-property",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/profiles/aj-nova-reality",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/property/pp-101",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/post-property",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/account",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/reels",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/messages",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/explore",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/saved",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/profiles/premium-property",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/profiles/aj-nova-reality",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/property/pp-101",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/post-property",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/account",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/reels",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/messages",
+      "violations": []
+    },
+    {
+      "route": "filter-dialog",
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "responsive": [
+    {
+      "width": 320,
+      "route": "/",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/explore",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/saved",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/profiles/premium-property",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/property/pp-101",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/post-property",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/account",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/reels",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 320,
+      "route": "/messages",
+      "viewport": 320,
+      "document": 320,
+      "body": 320
+    },
+    {
+      "width": 360,
+      "route": "/",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/explore",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/saved",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/profiles/premium-property",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/property/pp-101",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/post-property",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/account",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/reels",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 360,
+      "route": "/messages",
+      "viewport": 360,
+      "document": 360,
+      "body": 360
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/explore",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/saved",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/profiles/premium-property",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/property/pp-101",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/post-property",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/account",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/reels",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 375,
+      "route": "/messages",
+      "viewport": 375,
+      "document": 375,
+      "body": 375
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/explore",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/saved",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/profiles/premium-property",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/property/pp-101",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/post-property",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/account",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/reels",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 390,
+      "route": "/messages",
+      "viewport": 390,
+      "document": 390,
+      "body": 390
+    },
+    {
+      "width": 430,
+      "route": "/",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/explore",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/saved",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/profiles/premium-property",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/property/pp-101",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/post-property",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/account",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/reels",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 430,
+      "route": "/messages",
+      "viewport": 430,
+      "document": 430,
+      "body": 430
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/explore",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/saved",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/profiles/premium-property",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/property/pp-101",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/post-property",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/account",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/reels",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 768,
+      "route": "/messages",
+      "viewport": 768,
+      "document": 768,
+      "body": 768
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/explore",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/saved",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/profiles/premium-property",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/property/pp-101",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/post-property",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/account",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/reels",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/messages",
+      "viewport": 1024,
+      "document": 1024,
+      "body": 1024
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/explore",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/saved",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/profiles/premium-property",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/property/pp-101",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/post-property",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/account",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/reels",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1280,
+      "route": "/messages",
+      "viewport": 1280,
+      "document": 1280,
+      "body": 1280
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/explore",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/saved",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/profiles/premium-property",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/profiles/aj-nova-reality",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/property/pp-101",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/post-property",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/account",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/reels",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/messages",
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440
+    }
+  ],
+  "errors": [],
+  "performance": [],
+  "completed": "2026-11-12T15:55:21.046Z"
+}

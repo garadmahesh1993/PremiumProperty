@@ -10,7 +10,8 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 type AuthMode = "login" | "signup";
 
 function safeNextPath(value: string | null): string {
-  if (!value || !value.startsWith("/") || value.startsWith("//") || value.includes("\\")) return "/account";
+  if (!value || !value.startsWith("/") || value.startsWith("//") || value.includes("\\"))
+    return "/account";
   return value;
 }
 
@@ -61,11 +62,19 @@ export function AuthExperience({ initialMode }: { initialMode: AuthMode }) {
       setError("Enter a 6-digit code to continue.");
       return;
     }
-    const profile = { name: name.trim(), email: email.trim(), phone, verified: true, accountType: mode === "signup" ? "new" : "existing" };
+    const profile = {
+      name: name.trim(),
+      email: email.trim(),
+      phone,
+      verified: true,
+      accountType: mode === "signup" ? "new" : "existing",
+    };
     try {
       localStorage.setItem("pp-account-profile", JSON.stringify(profile));
     } catch {
-      setError("This browser could not save your account session. Check browser storage settings and try again.");
+      setError(
+        "This browser could not save your account session. Check browser storage settings and try again.",
+      );
       return;
     }
     if (nextPath !== "/account") {
@@ -83,23 +92,133 @@ export function AuthExperience({ initialMode }: { initialMode: AuthMode }) {
     setSuccess(false);
   }
 
-  return <><SiteHeader/><main id="main-content" className="route-page auth-page"><section className="auth-card">
-    <BrandMark/>
-    <span className="eyebrow">YOUR PREMIUMPROPERTY ACCOUNT</span>
-    <div className="auth-mode-tabs" role="tablist" aria-label="Account access">
-      <button type="button" role="tab" aria-selected={mode === "login"} className={mode === "login" ? "is-active" : ""} onClick={() => changeMode("login")}>Log in</button>
-      <button type="button" role="tab" aria-selected={mode === "signup"} className={mode === "signup" ? "is-active" : ""} onClick={() => changeMode("signup")}>Create account</button>
-    </div>
-    <h1>{success ? "You’re signed in" : mode === "signup" ? "Create your account" : "Welcome back"}</h1>
-    <p>{success ? "Your account session is saved in this browser." : codeStep ? `Enter the verification code to ${mode === "signup" ? "finish creating your account" : "continue"}.` : mode === "signup" ? "Add your details and continue with your mobile number." : "Use your mobile number to continue to your account."}</p>
-    {success ? <div className="auth-success-actions"><Link className="button button-teal" href="/account">Open my account →</Link><Link href="/post-property">Post a property →</Link></div> : <form className="auth-form" onSubmit={codeStep ? verifyCode : requestCode}>
-      {mode === "signup" && !codeStep && <><label>Full name<input autoComplete="name" value={name} onChange={(event) => setName(event.target.value)} placeholder="Your name"/></label><label>Email address <span className="auth-optional">(optional)</span><input type="email" autoComplete="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com"/></label></>}
-      <label>Mobile number<input type="tel" inputMode="numeric" autoComplete="tel-national" value={phone} onChange={(event) => setPhone(event.target.value.replace(/\D/g, "").slice(0, 10))} placeholder="10-digit mobile number"/></label>
-      {codeStep && <label>6-digit verification code<input type="text" inputMode="numeric" autoComplete="one-time-code" value={code} onChange={(event) => setCode(event.target.value.replace(/\D/g, "").slice(0, 6))} placeholder="Enter 6 digits"/></label>}
-      {error && <p className="error-note" role="alert">{error}</p>}
-      <button className="button button-orange" type="submit">{codeStep ? "Verify & continue →" : "Continue with phone →"}</button>
-      {codeStep && <button className="auth-back-button" type="button" onClick={() => { setCodeStep(false); setCode(""); setError(""); }}>Change mobile number</button>}
-      <small>This frontend preview does not send SMS or verify identity. Enter any 6 digits to continue. Account details stay in this browser.</small>
-    </form>}
-  </section></main><SiteFooter/></>;
+  return (
+    <>
+      <SiteHeader />
+      <main id="main-content" className="route-page auth-page">
+        <section className="auth-card">
+          <BrandMark />
+          <span className="eyebrow">YOUR PREMIUMPROPERTY ACCOUNT</span>
+          <div className="auth-mode-tabs" role="group" aria-label="Account access">
+            <button
+              type="button"
+              aria-pressed={mode === "login"}
+              className={mode === "login" ? "is-active" : ""}
+              onClick={() => changeMode("login")}
+            >
+              Log in
+            </button>
+            <button
+              type="button"
+              aria-pressed={mode === "signup"}
+              className={mode === "signup" ? "is-active" : ""}
+              onClick={() => changeMode("signup")}
+            >
+              Create account
+            </button>
+          </div>
+          <h1>
+            {success
+              ? "You’re signed in"
+              : mode === "signup"
+                ? "Create your account"
+                : "Welcome back"}
+          </h1>
+          <p>
+            {success
+              ? "Your account session is saved in this browser."
+              : codeStep
+                ? `Enter the verification code to ${mode === "signup" ? "finish creating your account" : "continue"}.`
+                : mode === "signup"
+                  ? "Add your details and continue with your mobile number."
+                  : "Use your mobile number to continue to your account."}
+          </p>
+          {success ? (
+            <div className="auth-success-actions">
+              <Link className="button button-teal" href="/account">
+                Open my account →
+              </Link>
+              <Link href="/post-property">Post a property →</Link>
+            </div>
+          ) : (
+            <form className="auth-form" onSubmit={codeStep ? verifyCode : requestCode}>
+              {mode === "signup" && !codeStep && (
+                <>
+                  <label>
+                    Full name
+                    <input
+                      autoComplete="name"
+                      value={name}
+                      onChange={(event) => setName(event.target.value)}
+                      placeholder="Your name"
+                    />
+                  </label>
+                  <label>
+                    Email address <span className="auth-optional">(optional)</span>
+                    <input
+                      type="email"
+                      autoComplete="email"
+                      value={email}
+                      onChange={(event) => setEmail(event.target.value)}
+                      placeholder="you@example.com"
+                    />
+                  </label>
+                </>
+              )}
+              <label>
+                Mobile number
+                <input
+                  type="tel"
+                  inputMode="numeric"
+                  autoComplete="tel-national"
+                  value={phone}
+                  onChange={(event) => setPhone(event.target.value.replace(/\D/g, "").slice(0, 10))}
+                  placeholder="10-digit mobile number"
+                />
+              </label>
+              {codeStep && (
+                <label>
+                  6-digit verification code
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    autoComplete="one-time-code"
+                    value={code}
+                    onChange={(event) => setCode(event.target.value.replace(/\D/g, "").slice(0, 6))}
+                    placeholder="Enter 6 digits"
+                  />
+                </label>
+              )}
+              {error && (
+                <p className="error-note" role="alert">
+                  {error}
+                </p>
+              )}
+              <button className="button button-orange" type="submit">
+                {codeStep ? "Verify & continue →" : "Continue with phone →"}
+              </button>
+              {codeStep && (
+                <button
+                  className="auth-back-button"
+                  type="button"
+                  onClick={() => {
+                    setCodeStep(false);
+                    setCode("");
+                    setError("");
+                  }}
+                >
+                  Change mobile number
+                </button>
+              )}
+              <small>
+                This frontend preview does not send SMS or verify identity. Enter any 6 digits to
+                continue. Account details stay in this browser.
+              </small>
+            </form>
+          )}
+        </section>
+      </main>
+      <SiteFooter />
+    </>
+  );
 }
